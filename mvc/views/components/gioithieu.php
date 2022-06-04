@@ -4,8 +4,8 @@
                 <div class="container">
                     <div class="breadcrumb-content">
                         <ul>
-                            <li><a href="index.html">Trang chủ</a></li>
-                            <li class="active">Giới thiệu</li>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active">About</li>
                         </ul>
                     </div>
                 </div>
@@ -18,10 +18,10 @@
                         <!-- About Text Start -->
                         <div class="col-lg-6 order-last order-lg-first">
                             <div class="about-text-wrap">
-                                <h2>Giới thiệu</h2>
-                                <p>Cửa hàng điện thoại di động G.I.Joe là chi nhánh thuộc tập doàn BKU PhoneStore, tọa lạc tại vị trí đắc địa ở trung tâm Quận 10, Tp. Hồ Chí Minh. Chúng tôi cam kết mang đến những sản phẩm chất lượng, giá cả cạnh tranh nhất trên thị trường hiện nay.</p>
+                                <h2>About</h2>
+                                <p>Bkstore mobile phone store is a branch of BKU PhoneStore group, located in a prime location in the center of District 10, City. Ho Chi Minh. We are committed to bringing the best quality products at the most competitive prices on the market today.</p>
                                 <br>
-                                <p>Với phương châm: "Tất cả vì niềm tin của Khách hàng". Chúng tôi luôn cố gắng đem lại cho khách hàng những gì tốt nhất!</p>
+                                <p>With the motto: "All for the trust of customers". We always try to give our customers the best!</p>
                             </div>
                         </div>
                         <!-- About Text End -->

@@ -37,10 +37,10 @@
 <body>
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
   <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="http://localhost/bkstore/Home">PhoneStore</a>
-  <input class="form-control form-control-dark w-100" type="text" placeholder="Tìm kiếm" aria-label="Search">
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      <a class="nav-link" href="http://localhost/bkstore/Home">Thoát</a>
+      <a class="nav-link" href="http://localhost/bkstore/Home">Sign out</a>
     </li>
   </ul>
 </nav>	
@@ -70,7 +70,7 @@
             }
             ?>" href="http://localhost/bkstore/CategoryAdmin">
               <i class="bi bi-folder"></i>
-              Danh Mục Sản Phẩm
+              Product Category
             </a>
           </li>
           <li class="nav-item">
@@ -81,7 +81,7 @@
             }
             ?>" href="http://localhost/bkstore/ProductAdmin">
               <i class="bi bi-file-earmark-text"></i>
-              Sản Phẩm
+              Product
             </a>
           </li>
           <li class="nav-item">
@@ -92,7 +92,7 @@
             }
             ?>" href="http://localhost/bkstore/OrderAdmin">
               <i class="bi bi-minecart"></i>
-              Quản Lý Đơn Hàng
+              Order Management
             </a>
           </li>
           <li class="nav-item">
@@ -103,7 +103,7 @@
             }
             ?>" href="http://localhost/bkstore/FeedbackAdmin">
               <i class="bi bi-question-circle-fill"></i>
-              Quản Lý Phản Hồi
+              Feedback Management
             </a>
           </li>
           <li class="nav-item">
@@ -114,7 +114,7 @@
             }
             ?>" href="http://localhost/bkstore/UserAdmin">
               <i class="bi bi-people-fill"></i>
-              Quản Lý Người Dùng
+              User Management
             </a>
           </li>
         </ul>

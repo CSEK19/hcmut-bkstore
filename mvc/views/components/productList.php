@@ -1,14 +1,14 @@
 <!-- Begin Breadcrumb -->
 <nav id="nav-breadcrumb" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="ml125 breadcrumb-item"><a href="http://localhost/bkstore/Home">Trang chủ</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
+            <li class="ml125 breadcrumb-item"><a href="http://localhost/bkstore/Home">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Product</li>
         </ol>
     </nav>
     <!-- End Breadcrumb -->
 
     <div id="wrapper">
-    <p style="font-weight:600">Danh mục sản phẩm</p>
+    <p style="font-weight:600">Products</p>
     <button 
         style="margin-bottom: 5px; margin-right: 5px;
         <?php
@@ -18,7 +18,7 @@
         " 
         type="button" 
         class="btn btn-primary">
-        <a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/productList/0">Tất cả</a>
+        <a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/productList/0">All</a>
     </button>
     <?php
         $countCategory = count($data["allCategory"]);
@@ -30,41 +30,41 @@
     ?>
         
         <hr>
-        <p style="font-weight:600">Bộ lọc</p>
+        <p style="font-weight:600">Filter</p>
         <button style="margin-bottom: 5px; margin-right: 5px;
             <?php
                 if($data["fillter"] == 1)
                     echo "background-color:red";
             ?>
         " type="button" class="btn btn-primary">
-            <a style="color:white;text-decoration:none  " href="http://localhost/bkstore/Home/productList/<?=$data["category_id"]?>/1/1">Giá (Cao &gt; Thấp)</a></button>
+            <a style="color:white;text-decoration:none  " href="http://localhost/bkstore/Home/productList/<?=$data["category_id"]?>/1/1">Price (High &gt; Low)</a></button>
         <button style="margin-bottom: 5px; margin-right: 5px;
             <?php
                 if($data["fillter"] == 2)
                     echo "background-color:red";
             ?>
         " type="button" class="btn btn-primary">
-            <a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/productList/<?=$data["category_id"]?>/1/2">Giá (Thấp &gt; Cao)</a></button>
+            <a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/productList/<?=$data["category_id"]?>/1/2">Price (Low &gt; High)</a></button>
         <button style="margin-bottom: 5px; margin-right: 5px;
             <?php
                 if($data["fillter"] == 3)
                     echo "background-color:red";
             ?>
         " type="button" class="btn btn-primary">
-            <a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/productList/<?=$data["category_id"]?>/1/3">Tên (A &gt; Z)</a></button>
+            <a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/productList/<?=$data["category_id"]?>/1/3">Name (A &gt; Z)</a></button>
         <button style="margin-bottom: 5px; margin-right: 5px;
             <?php
                 if($data["fillter"] == 4)
                     echo "background-color:red";
             ?>
         " type="button" class="btn btn-primary">
-            <a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/productList/<?=$data["category_id"]?>/1/4">Tên (Z &gt; A)</a></button>
+            <a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/productList/<?=$data["category_id"]?>/1/4">Name (Z &gt; A)</a></button>
        
         <hr>
         <?php
             $countCategoyCheck = 0;
             $countProduct = count($data["allProductCategory"]);
-            echo '<p style="font-weight:600">Tổng cộng có '.$countProduct.' sản phẩm (Từ: '.(1+$data["currentIndex"]).' -> '; 
+            echo '<p style="font-weight:600">Total product '.$countProduct.' products in total (From: '.(1+$data["currentIndex"]).' -> '; 
                 if($data["currentIndex"]+12 < $countProduct)
                     echo $data["currentIndex"]+12;
                 else echo $countProduct;
@@ -86,7 +86,7 @@
                 echo            '<span class="card-text">'.number_format($data["allProductCategory"][$i]["price"]).'đ</span>';
                 echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">'; if($data["allProductCategory"][$i]["discount"] != 0) echo number_format($data["allProductCategory"][$i]["discount"]).'đ'; echo '</span>';
                 echo        '</div>';
-                echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["allProductCategory"][$i]["id"].')">Đặt hàng</button>';
+                echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["allProductCategory"][$i]["id"].')">Order</button>';
                 echo    '</div>';
             }
         ?>
@@ -121,7 +121,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
 		$(".btnOrder").click(function(){
-            $("#alertSuccess").html('<p style="background-color: #55e073;padding: 10px;"><i class="fas fa-check-circle"></i>Thêm vào giỏ hàng thành công</p>');
+            $("#alertSuccess").html('<p style="background-color: #55e073;padding: 10px;"><i class="fas fa-check-circle"></i>Successfully add to cart</p>');
 		});
 	});
     

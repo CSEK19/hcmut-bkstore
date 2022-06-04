@@ -17,7 +17,7 @@
             echo            '<span class="card-text">'.number_format($data["productVsmart"][$i]["price"]).'đ</span>';
             echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">'; if($data["productVsmart"][$i]["discount"] != 0) echo number_format($data["productVsmart"][$i]["discount"]).'đ'; echo '</span>';
             echo        '</div>';
-            echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["productVsmart"][$i]["id"].')">Đặt hàng</button>';
+            echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["productVsmart"][$i]["id"].')">Order</button>';
             echo    '</div>';
         }
         ?>
@@ -40,7 +40,7 @@
             echo            '<span class="card-text">'.number_format($data["productIphone"][$i]["price"]).'đ</span>';
             echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">'; if($data["productIphone"][$i]["discount"] != 0) echo number_format($data["productIphone"][$i]["discount"]).'đ'; echo '</span>';
             echo        '</div>';
-            echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["productIphone"][$i]["id"].')">Đặt hàng</button>';
+            echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["productIphone"][$i]["id"].')">Order</button>';
             echo    '</div>';
         }
         ?>
@@ -63,7 +63,7 @@
             echo            '<span class="card-text">'.number_format($data["productSamsung"][$i]["price"]).'đ</span>';
             echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">'; if($data["productSamsung"][$i]["discount"] != 0) echo number_format($data["productSamsung"][$i]["discount"]).'đ'; echo '</span>';
             echo        '</div>';
-            echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["productSamsung"][$i]["id"].')">Đặt hàng</button>';
+            echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["productSamsung"][$i]["id"].')">Order</button>';
             echo    '</div>';
         }
         ?>
@@ -86,7 +86,7 @@
             echo            '<span class="card-text">'.number_format($data["productXiaomi"][$i]["price"]).'đ</span>';
             echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">'; if($data["productXiaomi"][$i]["discount"] != 0) echo number_format($data["productXiaomi"][$i]["discount"]).'đ'; echo '</span>';
             echo        '</div>';
-            echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["productXiaomi"][$i]["id"].')">Đặt hàng</button>';
+            echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["productXiaomi"][$i]["id"].')">Order</button>';
             echo    '</div>';
         }
         ?>
@@ -109,7 +109,7 @@
             echo            '<span class="card-text">'.number_format($data["productOppo"][$i]["price"]).'đ</span>';
             echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">'; if($data["productOppo"][$i]["discount"] != 0) echo number_format($data["productOppo"][$i]["discount"]).'đ'; echo '</span>';
             echo        '</div>';
-            echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["productOppo"][$i]["id"].')">Đặt hàng</button>';
+            echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["productOppo"][$i]["id"].')">Order</button>';
             echo    '</div>';
         }
         ?>
@@ -119,7 +119,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
 		$(".btnOrder").click(function(){
-            $("#alertSuccess").html('<p style="background-color: #55e073;padding: 10px;"><i class="fas fa-check-circle"></i>Thêm vào giỏ hàng thành công</p>');
+            $("#alertSuccess").html('<p style="background-color: #55e073;padding: 10px;"><i class="fas fa-check-circle"></i>Successfully add to cart</p>');
 		});
 	});
     

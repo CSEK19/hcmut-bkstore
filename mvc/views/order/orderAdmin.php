@@ -1,21 +1,21 @@
 <?php
-	$title = 'Quản Lý Đơn Hàng';
+	$title = 'Order Details';
     $isActive = "OrderAdmin";
 	require_once('mvc/views/blocks/header_admin.php');
 ?>
 
 <div class="row" style="margin-top: 20px;">
 	<div class="col-md-12 table-responsive">
-		<h3>Quản Lý Đơn Hàng</h3>
+		<h3>Order Details</h3>
 
 		<table class="table table-bordered table-hover" style="margin-top: 20px;">
 			<thead>
 				<tr>
-					<th>STT</th>
-					<th>Họ & Tên</th>
+					<th>No</th>
+					<th>Full name</th>
 					<th>Email</th>
-					<th>Tổng Tiền</th>
-					<th>Ngày Tạo</th>
+					<th>Total</th>
+					<th>date</th>
 					<th style="width: 120px"></th>
 				</tr>
 			</thead>
@@ -31,19 +31,19 @@
 					<td>'.$data["allOrder"][$i]['created_at'].'</td>
 					<td style="width: 50px">';
 		if($data["allOrder"][$i]['status'] == 0) {
-			echo '<a href="http://localhost/bkstore/OrderAdmin/updateStatusOrder/'.$data["allOrder"][$i]['id'].'/1"><button  class="btn btn-sm btn-success" style="margin-bottom: 10px;">Duyệt</button><a/>
-			<a href="http://localhost/bkstore/OrderAdmin/updateStatusOrder/'.$data["allOrder"][$i]['id'].'/2"><button class="btn btn-sm btn-danger">Hủy bỏ</button><a/>';
+			echo '<a href="http://localhost/bkstore/OrderAdmin/updateStatusOrder/'.$data["allOrder"][$i]['id'].'/1"><button  class="btn btn-sm btn-success" style="margin-bottom: 10px;">Accept</button><a/>
+			<a href="http://localhost/bkstore/OrderAdmin/updateStatusOrder/'.$data["allOrder"][$i]['id'].'/2"><button class="btn btn-sm btn-danger">Cancel</button><a/>';
 		} else if($data["allOrder"][$i]['status'] == 1) {
-			echo '<label class="badge badge-success">Đã duyệt</label>';
+			echo '<label class="badge badge-success">Accepted</label>';
 		} else if($data["allOrder"][$i]['status'] == 2){
-			echo '<label class="badge badge-danger">Đã hủy</label>';
+			echo '<label class="badge badge-danger">Canceled</label>';
 		}
 		else if($data["allOrder"][$i]['status'] == 4){
-			echo '<a href="http://localhost/bkstore/OrderAdmin/updateStatusOrder/'.$data["allOrder"][$i]['id'].'/1"><button  class="btn btn-sm btn-success" style="margin-bottom: 10px;">Duyệt</button><a/>
-			<a href="http://localhost/bkstore/OrderAdmin/updateStatusOrder/'.$data["allOrder"][$i]['id'].'/2"><button class="btn btn-sm btn-danger">Hủy bỏ</button><a/>';
-			echo '<label class="badge badge-danger">Đã thanh toán</label>';
+			echo '<a href="http://localhost/bkstore/OrderAdmin/updateStatusOrder/'.$data["allOrder"][$i]['id'].'/1"><button  class="btn btn-sm btn-success" style="margin-bottom: 10px;">Accept</button><a/>
+			<a href="http://localhost/bkstore/OrderAdmin/updateStatusOrder/'.$data["allOrder"][$i]['id'].'/2"><button class="btn btn-sm btn-danger">Cancel</button><a/>';
+			echo '<label class="badge badge-danger">Paid</label>';
 		}	
-		else echo '<label class="badge badge-danger">Hoàn thành giao dịch</label>';
+		else echo '<label class="badge badge-danger">Transfer success</label>';
 		echo '</td>
 				</tr>';
 	}

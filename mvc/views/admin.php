@@ -38,9 +38,9 @@
     let massPopChart = new Chart(myChart, {
         type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
         data: {
-            labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'Junly', 'August', 'September', 'October', 'November', 'December'],
             datasets: [{
-                label: 'Tổng số tiền bán hàng',
+                label: 'Total',
                 data: [
                     m1,
                     m2,
@@ -79,7 +79,7 @@
         options: {
             title: {
                 display: true,
-                text: 'Thống kê doanh thu hàng tháng',
+                text: 'Monthly revenue statistics',
                 fontSize: 25
             },
             legend: {

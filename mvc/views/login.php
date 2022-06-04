@@ -27,7 +27,7 @@
 <body>
 
     <form id="form_login" action="http://localhost/bkstore/Login/UserLogin" method="post">
-        <h4>ĐĂNG NHẬP</h4>
+        <h4>SIGN IN</h4>
         <div class="md-form md-outline mt-0">
             <label for="form19">Email</label>
             <input type="email" name="email" id="form19" class="form-control" placeholder="Email">
@@ -46,9 +46,9 @@
                
         ?>
         <div>
-            <a id="link_register" href="http://localhost/bkstore/Register">Đăng ký tài khoản</a>
+            <a id="link_register" href="http://localhost/bkstore/Register">Create an account</a>
             <button type="submit" onclick="checkLogin()" name="btnLogin" class="btn btn-primary">Login</button>
-            <a id="link_register" href="http://localhost/bkstore/Home">Trở về trang chủ</a>
+            <a id="link_register" href="http://localhost/bkstore/Home">Back to home</a>
         </div>
     </form>
 
@@ -57,9 +57,9 @@
         var email = document.getElementById("form19").value;
         var password = document.getElementById("password").value;
         if(email == '' || password == '') 
-          alert("Vui lòng nhập đủ thông tin!!!");
+          alert("Please fill all forms!!!");
         else if(password.length < 6)
-          alert("Vui lòng nhập mật khẩu có ít nhất 6 ký tự!!!");
+          alert("Password must have at least 6 characters!!!");
     }
 </script>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>

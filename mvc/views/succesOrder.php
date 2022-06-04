@@ -47,12 +47,12 @@
       <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
         <i class="checkmark">✓</i>
       </div>
-        <h1>Đặt hàng thành công</h1> 
-        <p>Đơn hàng sẽ được giao đến trong thời gian tối đa là 7 ngày</p>
+        <h1>Successful order</h1> 
+        <p>Orders will be delivered within a maximum of 7 days</p>
         <?php
           
         ?>
-        <a href="http://localhost/bkstore/Home">Quay về trang chủ</a>
+        <a href="http://localhost/bkstore/Home">Back to home</a>
       </div>
     </body>
 </html>

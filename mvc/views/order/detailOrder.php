@@ -1,23 +1,23 @@
 <?php
-	$title = 'Thông Tin Chi Tiết Đơn Hàng';
+	$title = 'Order Details';
     $isActive = "OrderAdmin";
 	require_once('mvc/views/blocks/header_admin.php');
 ?>
 
 <div class="row" style="margin-top: 20px;">
 	<div class="col-md-12">
-		<h3>Chi Tiết Đơn Hàng</h3>
+		<h3>Order Details</h3>
 	</div>
 	<div class="col-md-8 table-responsive">
 		<table class="table table-bordered table-hover" style="margin-top: 20px;">
 			<thead>
 				<tr>
-					<th>STT</th>
+					<th>No</th>
 					<th>Thumbnail</th>
-					<th>Tên Sản Phẩm</th>
-					<th>Giá</th>
-					<th>Số Lượng</th>
-					<th>Tổng Giá</th>
+					<th>Product</th>
+					<th>Price</th>
+					<th>Amount</th>
+					<th>Total</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -39,7 +39,7 @@
 					<td></td>
 					<td></td>
 					<td></td>
-					<th>Tổng Tiền</th>
+					<th>Total</th>
 					<th><?=number_format($data["orderItem"]['total_money'])?> đ</th>
 				</tr>
 			</tbody>
@@ -48,7 +48,7 @@
 	<div class="col-md-4">
 		<table class="table table-bordered table-hover" style="margin-top: 20px;">
 			<tr>
-				<th>Tên: </th>
+				<th>Name: </th>
 				<td><?=$data["orderItem"]['fullname']?></td>
 			</tr>
 			<tr>
@@ -56,7 +56,7 @@
 				<td><?=$data["orderItem"]['email']?></td>
 			</tr>
 			<tr>
-				<th>Địa Chỉ: </th>
+				<th>Address: </th>
 				<td><?=$data["orderItem"]['address']?></td>
 			</tr>
 			<tr>

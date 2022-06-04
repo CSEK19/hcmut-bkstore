@@ -1,81 +1,80 @@
 <div style="margin-top:70px" class="container">
-            <h3>Chi tiết đơn hàng</h3>
+            <h3>Order details</h3>
             <div class="table-responsive">
                 <form action="http://localhost/bkstore/PaymentOnline" id="create_form" method="post">       
                     <input type="text" name="user_id" value="<?=$user["id"]?>" hidden="true">
                     
                     <div class="form-group">
-                        <label for="form11">Họ và tên </label>
-                        <input type="text" name="fullname" id="form11" class="form-control" placeholder="Họ và tên">
+                        <label for="form11">Full name </label>
+                        <input type="text" name="fullname" id="form11" class="form-control" placeholder="Name">
                     </div>
                     <div class="form-group">
-                        <label for="form18">Số điện thoại </label>
-                        <input type="text" name="phone" id="form18" class="form-control" placeholder="Số điện thoại">
+                        <label for="form18">Phone number </label>
+                        <input type="text" name="phone" id="form18" class="form-control" placeholder="Phone">
                     </div>
                     <div class="form-group">
                         <label for="form19">Email </label>
                         <input type="email" name="email" id="form19" class="form-control" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <label for="form14">Địa chỉ </label>
-                        <input type="text" name="address" id="form14" placeholder="Địa chỉ" class="form-control">
+                        <label for="form14">Address </label>
+                        <input type="text" name="address" id="form14" placeholder="Address" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="language">Loại hàng hóa </label>
+                        <label for="language">Product type </label>
                         <select name="order_type" id="order_type" class="form-control">
-                            <option value="billpayment">Thanh toán hóa đơn</option>
+                            <option value="billpayment">Payment</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="order_id">Mã hóa đơn</label>
+                        <label for="order_id">Order Id</label>
                         <input class="form-control" id="order_id" name="order_id" type="text" value="<?php echo date("YmdHis") ?>"/>
                     </div>
                     <div class="form-group">
-                        <label for="amount">Số tiền</label>
+                        <label for="amount">Price</label>
                         <input class="form-control" id="amount"
                                name="amount" type="number" value="<?=$data["totalMoney"]?>"/>
                     </div>
                     <div class="form-group">
-                        <label for="order_desc">Nội dung thanh toán</label>
-                        <textarea class="form-control" cols="20" id="order_desc" name="order_desc" rows="2">Noi dung thanh toan</textarea>
+                        <label for="order_desc">Payment details</label>
+                        <textarea class="form-control" cols="20" id="order_desc" name="order_desc" rows="2">Payment details</textarea>
                     </div>
                     <div class="form-group">
-                        <label for="bank_code">Ngân hàng</label>
+                        <label for="bank_code">Bank</label>
                         <select name="bank_code" id="bank_code" class="form-control">
-                            <option value="">Không chọn</option>
-                            <option value="NCB"> Ngan hang NCB</option>
-                            <option value="AGRIBANK"> Ngan hang Agribank</option>
-                            <option value="SCB"> Ngan hang SCB</option>
-                            <option value="SACOMBANK">Ngan hang SacomBank</option>
-                            <option value="EXIMBANK"> Ngan hang EximBank</option>
-                            <option value="MSBANK"> Ngan hang MSBANK</option>
-                            <option value="NAMABANK"> Ngan hang NamABank</option>
-                            <option value="VNMART"> Vi dien tu VnMart</option>
-                            <option value="VIETINBANK">Ngan hang Vietinbank</option>
-                            <option value="VIETCOMBANK"> Ngan hang VCB</option>
-                            <option value="HDBANK">Ngan hang HDBank</option>
-                            <option value="DONGABANK"> Ngan hang Dong A</option>
-                            <option value="TPBANK"> Ngân hàng TPBank</option>
-                            <option value="OJB"> Ngân hàng OceanBank</option>
-                            <option value="BIDV"> Ngân hàng BIDV</option>
-                            <option value="TECHCOMBANK"> Ngân hàng Techcombank</option>
-                            <option value="VPBANK"> Ngan hang VPBank</option>
-                            <option value="MBBANK"> Ngan hang MBBank</option>
-                            <option value="ACB"> Ngan hang ACB</option>
-                            <option value="OCB"> Ngan hang OCB</option>
-                            <option value="IVB"> Ngan hang IVB</option>
-                            <option value="VISA"> Thanh toan qua VISA/MASTER</option>
+                            <option value="">None</option>
+                            <option value="NCB"> NCB Bank</option>
+                            <option value="AGRIBANK"> Agribank Bank</option>
+                            <option value="SCB"> SCB Bank</option>
+                            <option value="SACOMBANK">SacomBank Bank</option>
+                            <option value="EXIMBANK"> EximBank Bank</option>
+                            <option value="MSBANK"> MSBANK Bank</option>
+                            <option value="NAMABANK"> NamABank Bank</option>
+                            <option value="VIETINBANK">Vietinbank Bank</option>
+                            <option value="VIETCOMBANK">VCB Bank</option>
+                            <option value="HDBANK">HDBank Bank</option>
+                            <option value="DONGABANK">Dong A Bank</option>
+                            <option value="TPBANK">TPBank Bank</option>
+                            <option value="OJB">OceanBank Bank</option>
+                            <option value="BIDV">BIDV Bank</option>
+                            <option value="TECHCOMBANK">Techcombank Bank</option>
+                            <option value="VPBANK"> VPBank Bank</option>
+                            <option value="MBBANK"> MBBank Bank</option>
+                            <option value="ACB">  ACB Bank</option>
+                            <option value="OCB">  OCB Bank</option>
+                            <option value="IVB">  IVB Bank</option>
+                            <option value="VISA"> VISA/MASTER</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="language">Ngôn ngữ</label>
+                        <label for="language">Language</label>
                         <select name="language" id="language" class="form-control">
-                            <option value="vn">Tiếng Việt</option>
+                            <option value="vn">Vietnamese</option>
                             <option value="en">English</option>
                         </select>
                     </div>
                     <!-- <button type="submit" class="btn btn-primary" id="btnPopup">Thanh toán Post</button> -->
-                    <button type="submit" name="redirect" id="redirect" class="btn btn-primary">Thanh toán Redirect</button>
+                    <button type="submit" name="redirect" id="redirect" class="btn btn-primary">Payment</button>
 
                 </form>
             </div>

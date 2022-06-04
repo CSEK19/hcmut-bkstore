@@ -1,8 +1,8 @@
 <!--Section: Block Content-->
 <nav id="nav-breadcrumb" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="ml125 breadcrumb-item"><a href="http://localhost/bkstore/Home">Trang chủ</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
+            <li class="ml125 breadcrumb-item"><a href="http://localhost/bkstore/Home">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cart</li>
         </ol>
     </nav>
 <section>
@@ -39,8 +39,8 @@
                       <div class="d-flex justify-content-between">
                         <div>
                           <h5>'.$data["orderDetails"][$i]["title"].'</h5>
-                          <p class="mb-3 text-muted text-uppercase small">Số lượng: '.number_format($data["orderDetails"][$i]["price"]).' đ</p>
-                          <p class="mb-3 text-muted text-uppercase small">Số lượng: '.$data["num"][$i].'</p>
+                          <p class="mb-3 text-muted text-uppercase small">Price: '.number_format($data["orderDetails"][$i]["price"]).' đ</p>
+                          <p class="mb-3 text-muted text-uppercase small">Amount: '.$data["num"][$i].'</p>
                         </div>
                       </div>
                       <div class="d-flex justify-content-between align-items-center">
@@ -72,7 +72,7 @@
     <div class="mb-3">
         <div class="pt-4">
 
-          <h5 class="mb-4">Cho phép thanh toán</h5>
+          <h5 class="mb-4">Payment methods</h5>
 
           <img class="mr-2" width="45px"
             src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
@@ -92,31 +92,31 @@
       <div class="mb-3">
         <div class="pt-4">
 
-          <h5 class="mb-3">Tổng số tiền cần phải thanh toán:</h5>
+          <h5 class="mb-3">Total:</h5>
 
           <ul class="list-group list-group-flush">
             <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-              Số tiền tạm thời:
+              Product price:
               <span><?=number_format($total)?> đ</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-              Tiền giao hàng:
+              Shipping fee:
               <span>Freeship</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
               <div>
-                <strong>Tổng số tiền cần phải thanh toán:</strong>
+                <strong>Total:</strong>
               </div>
               <span><strong><?=number_format($total)?> đ</strong></span>
             </li>
           </ul>
           <?php
             if(isset($user)){
-              echo '<a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/checkout/'.$total.'"><button type="button" class="btn btn-primary btn-block">Thanh toán khi nhận hàng</button></a>';
+              echo '<a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/checkout/'.$total.'"><button type="button" class="btn btn-primary btn-block">Pay by cash</button></a>';
               echo '<br/>';
-              echo '<a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/paymentOnline/'.$total.'"><button type="button" class="btn btn-primary btn-block">Thanh toán online</button></a>';
+              echo '<a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/paymentOnline/'.$total.'"><button type="button" class="btn btn-primary btn-block">Online transfer</button></a>';
             }
-            else echo '<a style="color:red" href="http://localhost/bkstore/Login">Vui lòng đăng nhập để đặt hàng</a>'; 
+            else echo '<a style="color:red" href="http://localhost/bkstore/Login">Sign in to make payment</a>'; 
           ?>
           
 

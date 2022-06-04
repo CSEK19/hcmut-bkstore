@@ -1,13 +1,13 @@
-<h4 style="margin:70px 0 10px 50px ">Quản lý đơn hàng</h4>
+<h4 style="margin:70px 0 10px 50px ">Order management</h4>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">STT</th>
-      <th scope="col">Tên</th>
-      <th scope="col">Số điện thoại</th>
-      <th scope="col">Ngày đặt hàng</th>
-      <th scope="col">Tổng số tiền</th>
-      <th scope="col">Trạng thái</th>
+      <th scope="col">No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Phone number</th>
+      <th scope="col">Date</th>
+      <th scope="col">Total</th>
+      <th scope="col">Status</th>
       <th scope="col"></th>
     </tr>
   </thead>
@@ -24,12 +24,12 @@
         <td>';
         if($data["orderItem"][$i]["status"] == 0)
             echo 'Chờ duyệt';
-        else if($data["orderItem"][$i]["status"] == 1) echo "Đang giao hàng";
-        else if($data["orderItem"][$i]["status"] == 4) echo "Đã thanh toán";
-        else echo "Giao dịch hoàn tất!";
+        else if($data["orderItem"][$i]["status"] == 1) echo "Shipping";
+        else if($data["orderItem"][$i]["status"] == 4) echo "Paid";
+        else echo "Successfully pay!";
         echo '</td>';
         if($data["orderItem"][$i]["status"] != 3)
-          echo '<td><a href="http://localhost/bkstore/Home/confirmOrder/'.$data["orderItem"][$i]["id"].'/'.$user["id"].'"><button class="btn btn-danger">Đã nhận hàng</button><a/></td>
+          echo '<td><a href="http://localhost/bkstore/Home/confirmOrder/'.$data["orderItem"][$i]["id"].'/'.$user["id"].'"><button class="btn btn-danger">Has received the goods</button><a/></td>
       </tr>';
     }
   ?>

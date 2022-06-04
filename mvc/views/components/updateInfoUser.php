@@ -5,7 +5,7 @@ var_dump($user);
 
 <div  class="row" style="margin: 70px auto 0;width:50%">
 	<div class="col-md-12 table-responsive">
-		<h3> Quản lý tài khoản</h3>
+		<h3> Account management</h3>
 		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h5 style="color: red;"></h5>
@@ -13,7 +13,7 @@ var_dump($user);
 			<div class="panel-body">
 				<form method="post" action="http://localhost/bkstore/UserAdmin/updateUser/">
 					<div class="form-group">
-					  <label for="usr">Họ & Tên:</label>
+					  <label for="usr">Full name:</label>
 					  <input required="true" type="text" class="form-control" id="usr" name="fullname" value="<?=$user["fullname"]?>">
 					  <input type="text" name="id" value="<?=$user["id"]?>" hidden="true">
 					  <input type="text" name="updateInfoUser" value="1" hidden="true">
@@ -23,18 +23,18 @@ var_dump($user);
 					  <input required="true" type="email" class="form-control" id="email" name="email" value="<?=$user["email"]?>">
 					</div>
 					<div class="form-group">
-					  <label for="phone_number">SĐT:</label>
+					  <label for="phone_number">Phone number:</label>
 					  <input required="true" type="tel" class="form-control" id="phone_number" name="phone_number" value="<?=$user["phone_number"]?>">
 					</div>
 					<div class="form-group">
-					  <label for="address">Địa Chỉ:</label>
+					  <label for="address">Address:</label>
 					  <input required="true" type="text" class="form-control" id="address" name="address" value="<?=$user["address"]?>">
 					</div>
 					<div class="form-group">
-					  <label for="pwd">Mật Khẩu:</label>
+					  <label for="pwd">Password:</label>
 					  <input type="password" class="form-control" id="pwd" name="password" minlength="6">
 					</div>
-					<button class="btn btn-success">Lưu</button>
+					<button class="btn btn-success">Save</button>
 				</form>
 			</div>
 		</div>

@@ -44,7 +44,7 @@
     <!--Section heading-->
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
     <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Bạn có bất kì câu hỏi nào cho chúng tôi không? Hãy hỏi ngay đừng ngần ngại nhé. Chúng tôi sẽ trả lời bạn sớm nhất có thể!!!</p>
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions for us? Please do not hesitate to ask. We will reply you as soon as possible!!!</p>
 
     <div class="row">
 
@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <label for="subject" class="">Chủ đề</label>
+                            <label for="subject" class="">Topic</label>
                             <input type="text" id="subject" name="subject" class="form-control">
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                     <div class="col-md-12">
 
                         <div class="md-form">
-                            <label for="message">Nội dung</label>
+                            <label for="message">Details</label>
                             <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                         </div>
 
@@ -84,7 +84,7 @@
                 </div>
                 <!--Grid row-->
                 <div style="margin-top:10px" class="text-center text-md-left">
-                    <button class="btn btn-primary" onclick=checkBtnContact() name="btnContact">Gửi</button>
+                    <button class="btn btn-primary" onclick=checkBtnContact() name="btnContact">Send</button>
                 </div>
 
             </form>
@@ -97,7 +97,7 @@
         <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">
                 <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>Đại học Bách Khoa TPHCM</p>
+                    <p>HCM University of Technology</p>
                 </li>
 
                 <li><i class="fas fa-phone mt-4 fa-2x"></i>
@@ -105,7 +105,7 @@
                 </li>
 
                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>loc.nguyencse@gmail.com</p>
+                    <p>adimcse@gmail.com</p>
                 </li>
             </ul>
         </div>
@@ -124,6 +124,6 @@
         var subject = document.getElementById("subject").value; 
         var message = document.getElementById("message").value;
         if(subject == '' || message == '') 
-          alert("Vui lòng nhập đủ thông tin!!!");
+          alert("Please fill all forms!!!");
     }
 </script>

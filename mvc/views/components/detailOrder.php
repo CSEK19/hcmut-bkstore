@@ -1,13 +1,13 @@
-<h4 style="margin:70px 0 10px 50px ">Chi tiết đơn hàng</h4>
+<h4 style="margin:70px 0 10px 50px ">Order details</h4>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">STT</th>
-      <th scope="col">Hình ảnh</th>
-      <th scope="col">Tên sản phẩm</th>
-      <th scope="col">Giá</th>
-      <th scope="col">Số lượng</th>
-      <th scope="col">Tổng số tiền</th>
+      <th scope="col">No</th>
+      <th scope="col">Picture</th>
+      <th scope="col">Product</th>
+      <th scope="col">Price</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Total</th>
       <th scope="col"></th>
     </tr>
   </thead>
@@ -30,7 +30,7 @@
     <td></td>
     <td></td>
     <td></td>
-    <td><strong>Tổng số tiền:</strong></td>
+    <td><strong>Total:</strong></td>
     <td><strong><?=number_format($data["orderItem"]["total_money"])?> đ</strong></td>
   </tr>
   </tbody>

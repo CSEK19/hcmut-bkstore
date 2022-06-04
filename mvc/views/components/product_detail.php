@@ -1,6 +1,6 @@
 <nav id="nav-breadcrumb" aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="ml125 breadcrumb-item"><a href="http://localhost/bkstore/Home">Trang chủ</a></li>
+    <li class="ml125 breadcrumb-item"><a href="http://localhost/bkstore/Home">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page"><?=$data["productCategory"]?></li>
   </ol>
 </nav>
@@ -37,7 +37,7 @@
      </span>  
      </p>
       <p class="pt-1"><?=$data["productItem"]["description"]?></p>
-      <button onclick="addToCard(<?=$data['productItem']['id']?>)" type="button" class="btn btn-light btn-md mr-1 mb-2"><i class="fas fa-shopping-cart pr-2"></i>Thêm vào giỏ hàng</button>
+      <button onclick="addToCard(<?=$data['productItem']['id']?>)" type="button" class="btn btn-light btn-md mr-1 mb-2"><i class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
     </div>
   </div>
 
@@ -50,11 +50,11 @@
   <ul class="nav tabs-primary nav-justified" id="advancedTab" role="tablist">
     <li class="nav-item">
       <a class="nav-link" id="info-tab" data-toggle="tab" href="#description" role="tab" aria-controls="info"
-        aria-selected="false">Thông tin về sản phẩm</a>
+        aria-selected="false">Product details</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews"
-        aria-selected="false">Đánh giá(<?=$countFeedback?>)</a>
+        aria-selected="false">Rate(<?=$countFeedback?>)</a>
     </li>
   </ul>
   <div class="tab-content" id="advancedTabContent">
@@ -63,7 +63,7 @@
     </div>
     <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
     
-      <h5><span><?=$countFeedback?></span> đánh giá về <span><?=$data["productItem"]["title"]?></span></h5>
+      <h5><span><?=$countFeedback?></span> Review <span><?=$data["productItem"]["title"]?></span></h5>
       <?php
         for($i=0;$i<$countFeedback;$i++){
           echo '<div class="media mt-3 mb-4">
@@ -82,17 +82,17 @@
           <hr>';
         }
       ?>
-      <h5 class="mt-4">Thêm bài đánh giá</h5>
+      <h5 class="mt-4">Feedback</h5>
       <form form method="post" enctype="multipart/form-data" action="http://localhost/bkstore/FeedbackAdmin/addFeedback">
         <!-- Your review -->
         <input type="text" name="product_id" value="<?=$data["productItem"]["id"]?>" hidden="true">
         <input type="text" name="user_id" value="<?=$user["id"]?>" hidden="true">
         <div class="md-form md-outline">
-          <label for="form76">Nội dung</label>
+          <label for="form76">Details</label>
           <textarea name="note" id="form76" class="md-textarea form-control pr-6" rows="4"></textarea>
         </div>
         <div class="text-right pb-2">
-          <button class="btn btn-primary" name="btnReview" onclick="checkContentFeedback()">Thêm bài đánh giá</button>
+          <button class="btn btn-primary" name="btnReview" onclick="checkContentFeedback()">More</button>
         </div>
       </form>
     </div>
@@ -100,7 +100,7 @@
        
 </div>
 
-<h3 style="color:red; margin-top:10px">Các sản phẩm cùng danh mục</h3>
+<h3 style="color:red; margin-top:10px">Similar Products</h3>
 <div class="showproduct mt-3">
 <?php
     for($i=0;$i<4;$i++){
@@ -116,7 +116,7 @@
         echo            '<span class="card-text">'.number_format($data["allProductCategory"][$i]["price"]).'đ</span>';
         echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">'; if($data["allProductCategory"][$i]["discount"] != 0) echo number_format($data["allProductCategory"][$i]["discount"]).'đ'; echo '</span>';
         echo        '</div>';
-        echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["allProductCategory"][$i]["id"].')">Đặt hàng</button>';
+        echo        '<button type="button" class="btnOrder btn btn-danger" onclick="addToCard('.$data["allProductCategory"][$i]["id"].')">Submit</button>';
         echo    '</div>';
     }
 ?>
@@ -128,17 +128,17 @@
     var note = document.getElementById("form76").value;
     var userId = document.getElementById("user_id").innerHTML;
     if(userId == '123')
-      alert("Vui lòng đăng ngập để đánh giá!!!");
+      alert("Sign in to feedback!!!");
     else if(note == "")
-      alert("Vui lòng nhập nội dung đánh giá!!!");
+      alert("Fill all forms!!!");
   }
 
   $(document).ready(function(){
 		$(".btnOrder").click(function(){
-            $("#alertSuccess").html('<p style="background-color: #55e073;padding: 10px;"><i class="fas fa-check-circle"></i>Thêm vào giỏ hàng thành công</p>');
+            $("#alertSuccess").html('<p style="background-color: #55e073;padding: 10px;"><i class="fas fa-check-circle"></i>Successfully add to cart</p>');
 		});
 		$(".btn").click(function(){
-            $("#alertSuccess").html('<p style="background-color: #55e073;padding: 10px;"><i class="fas fa-check-circle"></i>Thêm vào giỏ hàng thành công</p>');
+            $("#alertSuccess").html('<p style="background-color: #55e073;padding: 10px;"><i class="fas fa-check-circle"></i>Successfully add to cart</p>');
 		});
 	});
 

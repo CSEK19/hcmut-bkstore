@@ -6,18 +6,18 @@
 
 <div class="row" style="margin-top: 20px;">
 	<div class="col-md-12 table-responsive">
-		<h3>Quản Lý Phản Hồi</h3>
+		<h3>Feedback management</h3>
 
 		<table class="table table-bordered table-hover" style="margin-top: 20px;">
 			<thead>
 				<tr>
-					<th>STT</th>
-					<th>Tên</th>
-					<th>SĐT</th>
+					<th>No</th>
+					<th>Name</th>
+					<th>Phone number</th>
 					<th>Email</th>
-					<th>Tên sản phẩm</th>
-					<th>Nội Dung</th>
-					<th>Ngày Tạo</th>
+					<th>Product</th>
+					<th>Details</th>
+					<th>Date</th>
 					<th style="width: 120px"></th>
 				</tr>
 			</thead>
@@ -35,7 +35,7 @@
 					<td>'.$data["allFeedback"][$i]['updated_at'].'</td>
 					<td style="width: 50px">';
 		if($data["allFeedback"][$i]['status'] == 0) {
-			echo '<a href="http://localhost/bkstore/FeedbackAdmin/updateStatusFeedback/'.$data["allFeedback"][$i]['id'].'"><button class="btn btn-danger">Đã Đọc</button><a/>';
+			echo '<a href="http://localhost/bkstore/FeedbackAdmin/updateStatusFeedback/'.$data["allFeedback"][$i]['id'].'"><button class="btn btn-danger">Seen</button><a/>';
 		}	
 		echo '</td>
 				</tr>';

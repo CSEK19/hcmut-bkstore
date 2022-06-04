@@ -23,11 +23,11 @@
 <body>
 
 <form id="form_register" action="http://localhost/bkstore/Register/UserRegister"  method="post">
-    <h4>ĐĂNG KÝ TÀI KHOẢN</h4>
+    <h4>SIGN UP</h4>
     <p class="d-none" id="checkEmail"><?=$data["checkEmail"]?></p>
   <div class="form-group">
-    <label for="exampleInputEmail1">Họ và tên</label>
-    <input type="text" class="form-control" id="fullname" name="fullname">
+    <label for="exampleInputEmail1">Full name</label>
+    <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Name">
     <div id="mes_fullname"></div>
   </div>
 
@@ -38,28 +38,28 @@
   <?php
   if(isset($data["result"])){
     if($data["result"] == false)
-      echo '<p style="color:red">Email đã tồn tại!!!</p>';
+      echo '<p style="color:red">Email existed!!!</p>';
   }
 ?>
   <div class="form-group">
-    <label for="exampleInputPassword1">Mật khẩu</label>
-    <input type="password" class="form-control" id="password" name="password">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
   </div>
 
   <div class="form-group">
-    <label for="exampleInputPassword1">Số điện thoại</label>
-    <input type="text" class="form-control" id="phone_number" name="phone_number">
+    <label for="exampleInputPassword1">Phone number</label>
+    <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Phone">
   </div>
   
 
   <div class="form-group">
-    <label for="exampleInputPassword1">Địa chỉ</label>
-    <input type="text" class="form-control" id="address" name="address">
+    <label for="exampleInputPassword1">Address</label>
+    <input type="text" class="form-control" id="address" name="address" placeholder="Address">
   </div>
   <div>
-    <a id="link_login" href="http://localhost/bkstore/Login">Tôi đã có tài khoản</a>
+    <a id="link_login" href="http://localhost/bkstore/Login">Have an account</a>
     <button type="submit" onclick="checkRegister()" name="btnRegister" class="btn btn-primary">Register</button>
-    <a id="link_register" href="http://localhost/bkstore/Home">Trở về trang chủ</a>
+    <a id="link_register" href="http://localhost/bkstore/Home">Back to home</a>
   </div>
   
 </form>
@@ -68,7 +68,7 @@
 
   var checkEmail = document.getElementById("checkEmail").innerHTML;
   if(checkEmail == 0)
-    alert("Email đã tồn tại!!!");
+    alert("Email existed!!!");
 
     function checkRegister() {
         var fullname = document.getElementById("fullname").value;
@@ -78,9 +78,9 @@
         var address = document.getElementById("address").value;
 
         if(fullname == '' || email == '' || password == ''|| phone_number == ''|| address == ''  ) 
-          alert("Vui lòng nhập đủ thông tin!!!");
+          alert("Please fill all forms!!!");
         else if(password.length < 6)
-          alert("Vui lòng nhập mật khẩu có ít nhất 6 ký tự!!!");
+          alert("Password must have at least 6 characters!!!");
     }
 </script>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
