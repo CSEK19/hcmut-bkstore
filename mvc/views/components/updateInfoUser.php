@@ -11,7 +11,7 @@ var_dump($user);
 				<h5 style="color: red;"></h5>
 			</div>
 			<div class="panel-body">
-				<form method="post" action="http://localhost/Laptrinhweb/UserAdmin/updateUser/">
+				<form method="post" action="http://localhost/bkstore/UserAdmin/updateUser/">
 					<div class="form-group">
 					  <label for="usr">Họ & Tên:</label>
 					  <input required="true" type="text" class="form-control" id="usr" name="fullname" value="<?=$user["fullname"]?>">

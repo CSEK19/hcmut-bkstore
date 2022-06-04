@@ -8,7 +8,7 @@
 	<div class="col-md-12 table-responsive">
 		<h3>Quản Lý Người Dùng</h3>
 
-		<a href="http://localhost/Laptrinhweb/UserAdmin/viewInsertUser"><button class="btn btn-success">Thêm Tài Khoản</button></a>
+		<a href="http://localhost/bkstore/UserAdmin/viewInsertUser"><button class="btn btn-success">Thêm Tài Khoản</button></a>
 
 		<table class="table table-bordered table-hover" style="margin-top: 20px;">
 			<thead>
@@ -35,11 +35,11 @@
 					<td>'.$data["allUser"][$i]['address'].'</td>
 					<td>'.$data["allUser"][$i]['role_name'].'</td>
 					<td style="width: 50px">
-						<a href="http://localhost/Laptrinhweb/UserAdmin/viewUpdateUser/'.$data["allUser"][$i]['id'].'"><button class="btn btn-warning">Sửa</button></a>
+						<a href="http://localhost/bkstore/UserAdmin/viewUpdateUser/'.$data["allUser"][$i]['id'].'"><button class="btn btn-warning">Sửa</button></a>
 					</td>
 					<td style="width: 50px">';
 		if($data["allUser"][$i]['role_id'] != 2) {
-			echo '<a href="http://localhost/Laptrinhweb/UserAdmin/deletedUser/'.$data["allUser"][$i]['id'].'"><button class="btn btn-danger">Xoá</button><a/>';
+			echo '<a href="http://localhost/bkstore/UserAdmin/deletedUser/'.$data["allUser"][$i]['id'].'"><button class="btn btn-danger">Xoá</button><a/>';
 		}
 		echo '
 					</td>

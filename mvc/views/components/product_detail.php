@@ -1,6 +1,6 @@
 <nav id="nav-breadcrumb" aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="ml125 breadcrumb-item"><a href="http://localhost/Laptrinhweb/Home">Trang chủ</a></li>
+    <li class="ml125 breadcrumb-item"><a href="http://localhost/bkstore/Home">Trang chủ</a></li>
     <li class="breadcrumb-item active" aria-current="page"><?=$data["productCategory"]?></li>
   </ol>
 </nav>
@@ -83,7 +83,7 @@
         }
       ?>
       <h5 class="mt-4">Thêm bài đánh giá</h5>
-      <form form method="post" enctype="multipart/form-data" action="http://localhost/Laptrinhweb/FeedbackAdmin/addFeedback">
+      <form form method="post" enctype="multipart/form-data" action="http://localhost/bkstore/FeedbackAdmin/addFeedback">
         <!-- Your review -->
         <input type="text" name="product_id" value="<?=$data["productItem"]["id"]?>" hidden="true">
         <input type="text" name="user_id" value="<?=$user["id"]?>" hidden="true">
@@ -105,13 +105,13 @@
 <?php
     for($i=0;$i<4;$i++){
         echo    '<div class="card">';
-        echo        '<a href="http://localhost/Laptrinhweb/Home/productDetail/'.$data["allProductCategory"][$i]["id"].'">
+        echo        '<a href="http://localhost/bkstore/Home/productDetail/'.$data["allProductCategory"][$i]["id"].'">
                         <img class="card-img-top mt-2"
                             src="'.$data["allProductCategory"][$i]["thumbnail"].'"
                             alt="Card image cap">
                     </a>';
         echo        '<div class="card-body">';
-        echo            '<a id="taga" href="http://localhost/Laptrinhweb/Home/productDetail/'.$data["allProductCategory"][$i]["id"].'"><h5 class="card-title">'.$data["allProductCategory"][$i]["title"].'</h5></a>
+        echo            '<a id="taga" href="http://localhost/bkstore/Home/productDetail/'.$data["allProductCategory"][$i]["id"].'"><h5 class="card-title">'.$data["allProductCategory"][$i]["title"].'</h5></a>
                         <hr />';
         echo            '<span class="card-text">'.number_format($data["allProductCategory"][$i]["price"]).'đ</span>';
         echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">'; if($data["allProductCategory"][$i]["discount"] != 0) echo number_format($data["allProductCategory"][$i]["discount"]).'đ'; echo '</span>';
@@ -120,7 +120,7 @@
         echo    '</div>';
     }
 ?>
- <p id="user_id"><?php if(isset($user["id"])) echo $user["id"]; else echo '123'; ?></p>
+ <p id="user_id"><?php if(isset($user["id"])) echo $user["id"]; else echo ''; ?></p>
 </div>
 </div>
 <script type="text/javascript">

@@ -35,7 +35,7 @@
 					<td>'.$data["allFeedback"][$i]['updated_at'].'</td>
 					<td style="width: 50px">';
 		if($data["allFeedback"][$i]['status'] == 0) {
-			echo '<a href="http://localhost/Laptrinhweb/FeedbackAdmin/updateStatusFeedback/'.$data["allFeedback"][$i]['id'].'"><button class="btn btn-danger">Đã Đọc</button><a/>';
+			echo '<a href="http://localhost/bkstore/FeedbackAdmin/updateStatusFeedback/'.$data["allFeedback"][$i]['id'].'"><button class="btn btn-danger">Đã Đọc</button><a/>';
 		}	
 		echo '</td>
 				</tr>';

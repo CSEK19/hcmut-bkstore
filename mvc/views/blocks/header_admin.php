@@ -3,10 +3,10 @@
     $user = getUserToken();
     if($user != null) {
         if($user["role_id"] == 1) {
-            header('Location: http://localhost/Laptrinhweb/Login');
+            header('Location: http://localhost/bkstore/Login');
         }
     }
-    else header('Location: http://localhost/Laptrinhweb/Home');
+    else header('Location: http://localhost/bkstore/Home');
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,7 +19,7 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-	<link rel="stylesheet" type="text/css" href="http://localhost/Laptrinhweb/public/css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/bkstore/public/css/dashboard.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
 
 	<!-- jQuery library -->
@@ -36,11 +36,11 @@
 </head>
 <body>
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="http://localhost/Laptrinhweb/Home">PhoneStore</a>
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="http://localhost/bkstore/Home">PhoneStore</a>
   <input class="form-control form-control-dark w-100" type="text" placeholder="Tìm kiếm" aria-label="Search">
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      <a class="nav-link" href="http://localhost/Laptrinhweb/Home">Exit</a>
+      <a class="nav-link" href="http://localhost/bkstore/Home">Thoát</a>
     </li>
   </ul>
 </nav>	
@@ -57,7 +57,7 @@
                     else echo '';
             }
             ?>"
-             href="http://localhost/Laptrinhweb/Admin">
+             href="http://localhost/bkstore/Admin">
               <i class="bi bi-house-fill"></i>
               Dashboard
             </a>
@@ -68,9 +68,9 @@
                       echo 'active';
                     else echo '';
             }
-            ?>" href="http://localhost/Laptrinhweb/CategoryAdmin">
+            ?>" href="http://localhost/bkstore/CategoryAdmin">
               <i class="bi bi-folder"></i>
-              Products list
+              Danh Mục Sản Phẩm
             </a>
           </li>
           <li class="nav-item">
@@ -79,9 +79,9 @@
                       echo 'active';
                     else echo '';
             }
-            ?>" href="http://localhost/Laptrinhweb/ProductAdmin">
+            ?>" href="http://localhost/bkstore/ProductAdmin">
               <i class="bi bi-file-earmark-text"></i>
-              Products
+              Sản Phẩm
             </a>
           </li>
           <li class="nav-item">
@@ -90,9 +90,9 @@
                       echo 'active';
                     else echo '';
             }
-            ?>" href="http://localhost/Laptrinhweb/OrderAdmin">
+            ?>" href="http://localhost/bkstore/OrderAdmin">
               <i class="bi bi-minecart"></i>
-              Orders management
+              Quản Lý Đơn Hàng
             </a>
           </li>
           <li class="nav-item">
@@ -101,9 +101,9 @@
                       echo 'active';
                     else echo '';
             }
-            ?>" href="http://localhost/Laptrinhweb/FeedbackAdmin">
+            ?>" href="http://localhost/bkstore/FeedbackAdmin">
               <i class="bi bi-question-circle-fill"></i>
-              Feedback management
+              Quản Lý Phản Hồi
             </a>
           </li>
           <li class="nav-item">
@@ -112,9 +112,9 @@
                       echo 'active';
                     else echo '';
             }
-            ?>" href="http://localhost/Laptrinhweb/UserAdmin">
+            ?>" href="http://localhost/bkstore/UserAdmin">
               <i class="bi bi-people-fill"></i>
-              Users management
+              Quản Lý Người Dùng
             </a>
           </li>
         </ul>
@@ -122,3 +122,4 @@
     </nav>
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <!-- hien thi tung chuc nang cua trang quan tri START-->

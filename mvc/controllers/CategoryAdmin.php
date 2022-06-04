@@ -21,7 +21,7 @@ class CategoryAdmin extends Controller{
             $name = getPost("name");
             $this->categoryModel->insertCategory($name);
         }
-        header('Location: http://localhost/Laptrinhweb/CategoryAdmin');
+        header('Location: http://localhost/bkstore/CategoryAdmin');
     }
 
     public function updateCategoryController($id) {
@@ -39,14 +39,14 @@ class CategoryAdmin extends Controller{
             $name = getPost('name');
             $this->categoryModel->updateCategory($name, $id);
         }
-        header('Location: http://localhost/Laptrinhweb/CategoryAdmin');
+        header('Location: http://localhost/bkstore/CategoryAdmin');
     }
 
     public function deleteCategoryController($id) {
         $data = $this->categoryModel->selectCategoryDelete($id);
         if($data)
-            header('Location: http://localhost/Laptrinhweb/CategoryAdmin');
-        else header('Location: http://localhost/Laptrinhweb/CategoryAdmin/SayHi/1');
+            header('Location: http://localhost/bkstore/CategoryAdmin');
+        else header('Location: http://localhost/bkstore/CategoryAdmin/SayHi/1');
     }
 
     public function checkDeleteCategoryController($id) {

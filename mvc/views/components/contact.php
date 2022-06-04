@@ -1,10 +1,40 @@
 <!--Section: Contact v.2-->
+
+<!-- Load map styles -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+
 <p class="d-none" id="alertSuccess"><?=$data["alertSuccess"]?></p>
 
     
-<div style="margin-top:70px" id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
+<!-- <div style="margin-top:70px" id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5623.641672731866!2d106.65721623557643!3d10.772602968920005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec3c161a3fb%3A0xef77cd47a1cc691e!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBCw6FjaCBraG9hIC0gxJDhuqFpIGjhu41jIFF14buRYyBnaWEgVFAuSENN!5e0!3m2!1svi!2s!4v1637332111149!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</div>
+</div> -->
+
+ <!-- Start Map -->
+    <div id="mapid" style="margin-top:70px; width: 100%; height: 700px;"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script>
+        var mymap = L.map('mapid').setView([10.773369022465484, 106.66062197999558], 17);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(mymap);
+
+        L.marker([10.773369022465484, 106.66062197999558]).addTo(mymap)
+            .bindPopup("<b>BK</b> My Store<br />Location.").openPopup();
+
+        mymap.scrollWheelZoom.disable();
+        mymap.touchZoom.disable();
+    </script>
+    <!-- End Map -->
 
 <section  id="wrapper" class="mb-4">
     <!--Google map-->
@@ -20,7 +50,7 @@
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="http://localhost/Laptrinhweb/FeedbackAdmin/addFeedback" method="POST">
+            <form id="contact-form" name="contact-form" action="http://localhost/bkstore/FeedbackAdmin/addFeedback" method="POST">
 
                 <!--Grid row-->
                 <div class="row">
@@ -91,7 +121,7 @@
         alert("Bạn đã gửi thành công!!!");
 
     function checkBtnContact() {
-        var subject = document.getElementById("subject").value;
+        var subject = document.getElementById("subject").value; 
         var message = document.getElementById("message").value;
         if(subject == '' || message == '') 
           alert("Vui lòng nhập đủ thông tin!!!");

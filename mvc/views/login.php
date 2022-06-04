@@ -3,10 +3,10 @@
     $user = getUserToken();
     if($user != null) {
         if($user["role_id"] == 1) {
-            header('Location: http://localhost/Laptrinhweb/Home');
+            header('Location: http://localhost/bkstore/Home');
         }
         else {
-            header('Location: http://localhost/Laptrinhweb/admin');
+            header('Location: http://localhost/bkstore/admin');
         }
     }
 ?>
@@ -20,14 +20,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost/Laptrinhweb/public/css/login.css">
+    <link rel="stylesheet" href="http://localhost/bkstore/public/css/login.css">
     <title>Login</title>
 </head>
 
 <body>
 
-    <form id="form_login" action="http://localhost/Laptrinhweb/Login/UserLogin" method="post">
-        <h4>SIGN IN</h4>
+    <form id="form_login" action="http://localhost/bkstore/Login/UserLogin" method="post">
+        <h4>ĐĂNG NHẬP</h4>
         <div class="md-form md-outline mt-0">
             <label for="form19">Email</label>
             <input type="email" name="email" id="form19" class="form-control" placeholder="Email">
@@ -36,7 +36,7 @@
         <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
             <input type="password" class="form-control" id="password" name="password"
-                placeholder="Password">
+                placeholder="Password...">
         </div>
         <?php 
             if(isset($data["result"])){
@@ -46,9 +46,9 @@
                
         ?>
         <div>
-            <a id="link_register" href="http://localhost/Laptrinhweb/Register">Create an account</a>
-            <button type="submit" onclick="checkLogin()" name="btnLogin" class="btn btn-primary">Sign in</button>
-            <a id="link_register" href="http://localhost/Laptrinhweb/Home">Back to home</a>
+            <a id="link_register" href="http://localhost/bkstore/Register">Đăng ký tài khoản</a>
+            <button type="submit" onclick="checkLogin()" name="btnLogin" class="btn btn-primary">Login</button>
+            <a id="link_register" href="http://localhost/bkstore/Home">Trở về trang chủ</a>
         </div>
     </form>
 
@@ -57,9 +57,9 @@
         var email = document.getElementById("form19").value;
         var password = document.getElementById("password").value;
         if(email == '' || password == '') 
-          alert("Please fill all forms!!!");
+          alert("Vui lòng nhập đủ thông tin!!!");
         else if(password.length < 6)
-          alert("Password must have at least 6 characters!!!");
+          alert("Vui lòng nhập mật khẩu có ít nhất 6 ký tự!!!");
     }
 </script>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>

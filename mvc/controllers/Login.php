@@ -28,15 +28,15 @@ class Login extends Controller{
            
             if($kq["result"]) {
                 if($kq["role_id"] == 1) {
-                    header('Location: http://localhost/Laptrinhweb/Home');
+                    header('Location: http://localhost/bkstore/Home');
 
                 }
                 else {
-                    header('Location: http://localhost/Laptrinhweb/admin');
+                    header('Location: http://localhost/bkstore/admin');
                 }
             }
             else {
-                header('Location: http://localhost/Laptrinhweb/Login');
+                header('Location: http://localhost/bkstore/Login');
             }
 
         }
@@ -51,7 +51,7 @@ class Login extends Controller{
             setcookie('token', '', time() - 100, '/');
         }
         session_destroy();
-        header('Location: http://localhost/Laptrinhweb/Home');
+        header('Location: http://localhost/bkstore/Home');
     }
 }
 

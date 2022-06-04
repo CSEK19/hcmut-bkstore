@@ -14,7 +14,7 @@ class PaymentOnline extends Controller{
         $user_id = getPost('user_id');
         $totalMoney = getPost('amount');
         if($fullname == "" || $address == "" || $phone == "" || $email == "")
-            header('Location: http://localhost/Laptrinhweb/Home/paymentOnline/'.$totalMoney);
+            header('Location: http://localhost/bkstore/Home/paymentOnline/'.$totalMoney);
         else {
             $orderModel = $this->model("OrderModel");
             $orderModel->insertOrders($user_id, $fullname, $address, $phone, $email,$totalMoney);
@@ -50,7 +50,7 @@ class PaymentOnline extends Controller{
         $vnp_Locale = $_POST['language'];
         $vnp_BankCode = $_POST['bank_code'];
         $vnp_IpAddr = $_SERVER['REMOTE_ADDR'];
-        $vnp_Returnurl = "http://localhost/Laptrinhweb/vnpay_return.php";
+        $vnp_Returnurl = "http://localhost/bkstore/vnpay_return.php";
         $vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
         $vnp_TmnCode = "M8HTHR13"; //Website ID in VNPAY System
         $vnp_HashSecret = "LJWGQOQSMCOBQHYJQOWTTISWHQURIMZJ"; //Secret key

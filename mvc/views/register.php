@@ -3,10 +3,10 @@
     $user = getUserToken();
     if($user != null) {
         if($user["role_id"] == 1) {
-            header('Location: http://localhost/Laptrinhweb/Home');
+            header('Location: http://localhost/bkstore/Home');
         }
         else {
-            header('Location: http://localhost/Laptrinhweb/admin');
+            header('Location: http://localhost/bkstore/admin');
         }
     }
 ?>
@@ -17,17 +17,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost/Laptrinhweb/public/css/register.css">
+    <link rel="stylesheet" href="http://localhost/bkstore/public/css/register.css">
     <title>Register</title>
 </head>
 <body>
 
-<form id="form_register" action="http://localhost/Laptrinhweb/Register/UserRegister"  method="post">
-    <h4>SIGN UP</h4>
+<form id="form_register" action="http://localhost/bkstore/Register/UserRegister"  method="post">
+    <h4>ĐĂNG KÝ TÀI KHOẢN</h4>
     <p class="d-none" id="checkEmail"><?=$data["checkEmail"]?></p>
   <div class="form-group">
-    <label for="exampleInputEmail1">Fullname</label>
-    <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Fullname">
+    <label for="exampleInputEmail1">Họ và tên</label>
+    <input type="text" class="form-control" id="fullname" name="fullname">
     <div id="mes_fullname"></div>
   </div>
 
@@ -42,24 +42,24 @@
   }
 ?>
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+    <label for="exampleInputPassword1">Mật khẩu</label>
+    <input type="password" class="form-control" id="password" name="password">
   </div>
 
   <div class="form-group">
-    <label for="exampleInputPassword1">Phone number</label>
-    <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Phone number">
+    <label for="exampleInputPassword1">Số điện thoại</label>
+    <input type="text" class="form-control" id="phone_number" name="phone_number">
   </div>
   
 
   <div class="form-group">
-    <label for="exampleInputPassword1">Address</label>
-    <input type="text" class="form-control" id="address" name="address" placeholder="Address">
+    <label for="exampleInputPassword1">Địa chỉ</label>
+    <input type="text" class="form-control" id="address" name="address">
   </div>
   <div>
-    <a id="link_login" href="http://localhost/Laptrinhweb/Login">Have an account ?</a>
+    <a id="link_login" href="http://localhost/bkstore/Login">Tôi đã có tài khoản</a>
     <button type="submit" onclick="checkRegister()" name="btnRegister" class="btn btn-primary">Register</button>
-    <a id="link_register" href="http://localhost/Laptrinhweb/Home">Back to home</a>
+    <a id="link_register" href="http://localhost/bkstore/Home">Trở về trang chủ</a>
   </div>
   
 </form>
@@ -78,9 +78,9 @@
         var address = document.getElementById("address").value;
 
         if(fullname == '' || email == '' || password == ''|| phone_number == ''|| address == ''  ) 
-          alert("Please fill all forms!!!");
+          alert("Vui lòng nhập đủ thông tin!!!");
         else if(password.length < 6)
-          alert("Password must have at least 6 characters!!!");
+          alert("Vui lòng nhập mật khẩu có ít nhất 6 ký tự!!!");
     }
 </script>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>

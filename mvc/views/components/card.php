@@ -1,7 +1,7 @@
 <!--Section: Block Content-->
 <nav id="nav-breadcrumb" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="ml125 breadcrumb-item"><a href="http://localhost/Laptrinhweb/Home">Trang chủ</a></li>
+            <li class="ml125 breadcrumb-item"><a href="http://localhost/bkstore/Home">Trang chủ</a></li>
             <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
         </ol>
     </nav>
@@ -25,7 +25,7 @@
                 <div class="row mb-4">
                   <div class="col-md-5 col-lg-3 col-xl-3">
                     <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                       <a href="http://localhost/Laptrinhweb/Home/productDetail/'.$data["orderDetails"][$i]["id"].'">
+                       <a href="http://localhost/bkstore/Home/productDetail/'.$data["orderDetails"][$i]["id"].'">
                         <div class="mask">
                           <img class="img-fluid w-100"
                             src="'.$data["orderDetails"][$i]["thumbnail"].'">
@@ -112,11 +112,11 @@
           </ul>
           <?php
             if(isset($user)){
-              echo '<a style="color:white;text-decoration:none" href="http://localhost/Laptrinhweb/Home/checkout/'.$total.'"><button type="button" class="btn btn-primary btn-block">Thanh toán khi nhận hàng</button></a>';
+              echo '<a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/checkout/'.$total.'"><button type="button" class="btn btn-primary btn-block">Thanh toán khi nhận hàng</button></a>';
               echo '<br/>';
-              echo '<a style="color:white;text-decoration:none" href="http://localhost/Laptrinhweb/Home/paymentOnline/'.$total.'"><button type="button" class="btn btn-primary btn-block">Thanh toán online</button></a>';
+              echo '<a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/paymentOnline/'.$total.'"><button type="button" class="btn btn-primary btn-block">Thanh toán online</button></a>';
             }
-            else echo '<a style="color:red" href="http://localhost/Laptrinhweb/Login">Vui lòng đăng nhập để đặt hàng</a>'; 
+            else echo '<a style="color:red" href="http://localhost/bkstore/Login">Vui lòng đăng nhập để đặt hàng</a>'; 
           ?>
           
 

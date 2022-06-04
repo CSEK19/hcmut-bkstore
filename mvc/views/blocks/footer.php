@@ -10,13 +10,16 @@
                 <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
 
                     <!-- Links -->
-                    <h5>About us </h5>
+                    <h5>Giới thiệu về chúng tôi</h5>
                     <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
 
-                    <p class="foot-desc mb-0">Developement team</p>
-                    <p class="foot-desc mb-0">Trần Tiến Phát</p>
-                    <p class="foot-desc mb-0">Nguyễn Bá Minh Hưng </p>
-                    <p class="foot-desc mb-0">Phạm Nhật Hoàng </p>
+                    <p class="foot-desc mb-0">Đội ngũ phát triển gồm 5 thành viên</p>
+                    <p class="foot-desc mb-0">Nguyễn Tấn Lộc</p>
+                    <p class="foot-desc mb-0">Nguyễn Danh Tiến Dũng </p>
+                    <p class="foot-desc mb-0">Hà Minh Đức </p>
+                    <p class="foot-desc mb-0">Trần Lê Công Minh </p>
+                    <p class="foot-desc mb-0">Nguyễn Trọng Phúc </p>
+
                 </div>
                 <!-- Grid column -->
 
@@ -26,21 +29,21 @@
                 <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
 
                     <!-- Links -->
-                    <h5>Trending products </h5>
+                    <h5>Sản phẩm nổi bật</h5>
                     <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
 
                     <ul class="list-unstyled foot-desc">
                         <li class="mb-2">
-                            <a href="http://localhost/Laptrinhweb/Home/productList/1">Vsmart</a>
+                            <a href="http://localhost/bkstore/Home/productList/1">Vsmart</a>
                         </li>
                         <li class="mb-2">
-                            <a href="http://localhost/Laptrinhweb/Home/productList/2">Iphone</a>
+                            <a href="http://localhost/bkstore/Home/productList/2">iPhone</a>
                         </li>
                         <li class="mb-2">
-                            <a href="http://localhost/Laptrinhweb/Home/productList/3">Samsung</a>
+                            <a href="http://localhost/bkstore/Home/productList/3">Samsung</a>
                         </li>
                         <li class="mb-2">
-                            <a href="http://localhost/Laptrinhweb/Home/productList/104">Oppo</a>
+                            <a href="http://localhost/bkstore/Home/productList/104">Oppo</a>
                         </li>
                     </ul>
 
@@ -53,21 +56,21 @@
                 <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
 
                     <!-- Links -->
-                    <h5>Support</h5>
+                    <h5>Hỗ trợ</h5>
                     <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
 
                     <ul class="list-unstyled foot-desc">
                         <li class="mb-2">
-                            <a href="#!">Account management</a>
+                            <a href="#!">Quản lý tài khoản</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#!">Support</a>
+                            <a href="#!">Trợ giúp</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#!">News</a>
+                            <a href="#!">Tin tức</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#!">Contact</a>
+                            <a href="#!">Liên hệ</a>
                         </li>
                     </ul>
 
@@ -80,16 +83,16 @@
                 <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
 
                     <!-- Links -->
-                    <h5>Contact</h5>
+                    <h5>Liên hệ</h5>
                     <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
 
                     <ul class="fa-ul foot-desc ml-4">
-                        <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>HCM University of Technology   
+                        <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>Đại học Bách Khoa TPHCM   
                         </li>
-                        <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>094 125 5292</li>
-                        <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>admin.cse@bk.com
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>034 765 1292</li>
+                        <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>loc.nguyencse@gmail.com
                         </li>
-                        <li><span class="fa-li"><i class="far fa-clock"></i></span>Working 24/7</li>
+                        <li><span class="fa-li"><i class="far fa-clock"></i></span>Làm việc 24/7</li>
                     </ul>
 
                 </div>

@@ -7,7 +7,7 @@
 	<div class="col-md-12 table-responsive">
 		<h3>Quản Lý Sản Phẩm</h3>
 
-		<a href="http://localhost/Laptrinhweb/ProductAdmin/viewAddProduct"><button class="btn btn-success">Thêm Sản Phẩm</button></a>
+		<a href="http://localhost/bkstore/ProductAdmin/viewAddProduct"><button class="btn btn-success">Thêm Sản Phẩm</button></a>
 
 		<table class="table table-bordered table-hover" style="margin-top: 20px;">
 			<thead>
@@ -32,10 +32,10 @@
 					<td>'.number_format($data["allProduct"][$i]['price']).' VNĐ</td>
 					<td>'.$data["allProduct"][$i]['category_name'].'</td>
 					<td style="width: 50px">
-						<a href="http://localhost/Laptrinhweb/ProductAdmin/viewUpdateProduct/'.$data["allProduct"][$i]["id"].'"><button class="btn btn-warning">Sửa</button></a>
+						<a href="http://localhost/bkstore/ProductAdmin/viewUpdateProduct/'.$data["allProduct"][$i]["id"].'"><button class="btn btn-warning">Sửa</button></a>
 					</td>
 					<td style="width: 50px">
-					<a href="http://localhost/Laptrinhweb/ProductAdmin/deleteProduct/'.$data["allProduct"][$i]["id"].'"><button class="btn btn-danger">Xoá</button></a>
+					<a href="http://localhost/bkstore/ProductAdmin/deleteProduct/'.$data["allProduct"][$i]["id"].'"><button class="btn btn-danger">Xoá</button></a>
 					</td>
 				</tr>';
 	}

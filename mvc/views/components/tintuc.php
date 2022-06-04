@@ -56,7 +56,7 @@
                                             <div class="col-lg-6">
                                                 <div class="li-blog-content">
                                                     <div class="li-blog-details">
-                                                        <h3 class="li-blog-heading pt-xs-25 pt-sm-25"><a href="">Điện thoại Iphone siêu mới</a></h3>
+                                                        <h3 class="li-blog-heading pt-xs-25 pt-sm-25"><a href="">Điện thoại iPhone siêu mới</a></h3>
                                                         <p>Miễn phí 4G tốc độ cao 10GB/ Tháng trong 18 tháng - Công nghệ Vsim ảo đầu tiên Cấu hình vượt trội, trải nghiệm mạnh mẽ - Chip Helio G35 8 nhân, RAM 3GB Màn hình siêu rộng, xem phim thả ga - Màn hình IPS LCD 6.528 inch, viền siêu mỏng Sử dụng cả ngày dài - Pin 5000mAh, sạc nhanh 15W</p>
                                                     </div>
                                                 </div>

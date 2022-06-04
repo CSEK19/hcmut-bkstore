@@ -5,15 +5,15 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100"
-                        src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/f3-fl3-690-300-max.png" alt="First slide">
+                        src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/SS_Week.png" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/690x300_7_.png"
+                    <img class="d-block w-100" src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/s22.png"
                         alt="Second slide">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100"
-                        src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/f3-fl3-690-300-max.png" alt="Third slide">
+                        src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/1000xm5.png" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -26,9 +26,11 @@
             </a>
         </div>
         <div class="imgSliderFlex">
-            <img style="margin-bottom: 10px;" src="https://cdn.tgdd.vn/2021/10/banner/cbfold3-830-300-830x300-2.png"
+            <img style="margin-bottom: 10px;" src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/RB_galaxy-A73.png"
                 alt="Third slide" class="imgSlider">
-            <img src="https://cdn.tgdd.vn/2021/11/banner/big11-830-300-830x300.png" alt="Third slide" class="imgSlider">
+            <img src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/iPhone-11-Right.jpg" alt="Third slide" class="imgSlider">
+            <img src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/idepad_3.png" alt="Third slide" class="imgSlider">
+
         </div>
     </div>
     <!-- End Slider -->

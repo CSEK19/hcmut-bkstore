@@ -17,7 +17,7 @@ class FeedbackAdmin extends Controller{
 
     public function updateStatusFeedback($id) {
         $this->feedbackModel->updateStatus($id);
-        header('Location: http://localhost/Laptrinhweb/FeedbackAdmin');
+        header('Location: http://localhost/bkstore/FeedbackAdmin');
     }
 
     public function addFeedback() {
@@ -29,9 +29,9 @@ class FeedbackAdmin extends Controller{
                 $user_id = getPost('user_id');
             var_dump($note);
             if(!$user_id || $note == "")
-                header('Location: http://localhost/Laptrinhweb/Home/productDetail/'.$product_id);
+                header('Location: http://localhost/bkstore/Home/productDetail/'.$product_id);
             else $this->feedbackModel->addFeedbackProduct($note, $user_id,$product_id);
-            header('Location: http://localhost/Laptrinhweb/Home/productDetail/'.$product_id);
+            header('Location: http://localhost/bkstore/Home/productDetail/'.$product_id);
         }
         else if(isset($_POST["btnContact"])){
             if(isset($_POST["subject"]))
@@ -42,12 +42,12 @@ class FeedbackAdmin extends Controller{
             if(isset($_POST["user_id"]))
                 $user_id = getPost('user_id');
             if(!$user_id)
-                header('Location: http://localhost/Laptrinhweb/Home/contact');
+                header('Location: http://localhost/bkstore/Home/contact');
             else if($subject == "" || $message== "")
-                header('Location: http://localhost/Laptrinhweb/Home/contact');
+                header('Location: http://localhost/bkstore/Home/contact');
             else {
                 $this->feedbackModel->addContact($note, $user_id);
-                header('Location: http://localhost/Laptrinhweb/Home/contact/1');
+                header('Location: http://localhost/bkstore/Home/contact/1');
             }
         }
         

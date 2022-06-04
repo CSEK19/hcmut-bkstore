@@ -52,7 +52,7 @@
         <?php
           
         ?>
-        <a href="http://localhost/Laptrinhweb/Home">Quay về trang chủ</a>
+        <a href="http://localhost/bkstore/Home">Quay về trang chủ</a>
       </div>
     </body>
 </html>
