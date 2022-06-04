@@ -8,7 +8,7 @@
 	<div class="col-md-12 table-responsive">
 		<h3>User Management</h3>
 
-		<a href="http://localhost/bkstore/UserAdmin/viewInsertUser"><button class="btn btn-success">Thêm Tài Khoản</button></a>
+		<a href="http://localhost/bkstore/UserAdmin/viewInsertUser"><button class="btn btn-success">New account</button></a>
 
 		<table class="table table-bordered table-hover" style="margin-top: 20px;">
 			<thead>

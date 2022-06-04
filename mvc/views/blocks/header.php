@@ -51,8 +51,8 @@
     </style>
     <body>
             <!-- Begin Header -->
-            <nav id="navColor" class=" navbar fixed-top navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="http://localhost/bkstore/Home"><img src="http://localhost/bkstore/public/logophonestore.svg" alt="G.I.Joe"></a>
+            <nav style = "background-color: rgb(0, 145, 255)" class=" navbar fixed-top navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="http://localhost/bkstore/Home"><img src="http://localhost/bkstore/public/BKStore__1_-removebg-preview.png" alt="Bkstore"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -91,7 +91,7 @@
                     </ul>
                     <form class="form-inline my-2 my-lg-0" method="POST" action="http://localhost/bkstore/Home/search_buttuon">
                         <input class="form-control mr-sm-2" type="search" id="search_name" name="search_name" placeholder="Search..." aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <button class="btn btn-outline-success my-2 my-sm-0 bg-success text-light" type="submit">Search</button>
                     </form>
                 </div>
                 <div style="margin-right: 20px;" class="nav-item dropdown">
