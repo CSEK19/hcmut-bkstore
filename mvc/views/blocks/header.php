@@ -60,16 +60,16 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item <?php if($data["render"]!="tintuc" && $data["render"]!="gioithieu" && $data["render"]!="contact") echo "active"; ?>">
-                            <a class="nav-link" href="http://localhost/Laptrinhweb/Home">Trang chủ <span class="sr-only">(current)</span></a>
+                        <li class="nav-item <?php if($data["render"]!="news" && $data["render"]!="about" && $data["render"]!="contact") echo "active"; ?>">
+                            <a class="nav-link" href="http://localhost/Laptrinhweb/Home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="http://localhost/Laptrinhweb/Home/productList" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Sản phẩm
+                                Products
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="http://localhost/Laptrinhweb/Home/productList/0">Tất cả</a>
+                            <a class="dropdown-item" href="http://localhost/Laptrinhweb/Home/productList/0">All</a>
                             <?php
                                 $countCategory = count($data["allCategory"]);
                                     for($i=0;$i<$countCategory;$i++){
@@ -80,18 +80,18 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if($data["render"]=="tintuc") echo "active"; ?>" href="http://localhost/Laptrinhweb/Home/tintuc">Tin tức</a>
+                            <a class="nav-link <?php if($data["render"]=="news") echo "active"; ?>" href="http://localhost/Laptrinhweb/Home/news">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if($data["render"]=="gioithieu") echo "active"; ?>" href="http://localhost/Laptrinhweb/Home/gioithieu">Giới thiệu</a>
+                            <a class="nav-link <?php if($data["render"]=="about") echo "active"; ?>" href="http://localhost/Laptrinhweb/Home/about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if($data["render"]=="contact") echo "active"; ?>" href="http://localhost/Laptrinhweb/Home/contact">Liên hệ</a>
+                            <a class="nav-link <?php if($data["render"]=="contact") echo "active"; ?>" href="http://localhost/Laptrinhweb/Home/contact">Contact</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0" method="POST" action="http://localhost/Laptrinhweb/Home/search_buttuon">
                         <input class="form-control mr-sm-2" type="search" id="search_name" name="search_name" placeholder="Search..." aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search </button>
                     </form>
                 </div>
                 <div style="margin-right: 20px;" class="nav-item dropdown">
@@ -106,14 +106,14 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <?php
                         if(!isset($fullname)){
-                            echo '<a class="dropdown-item" href="http://localhost/Laptrinhweb/Login">Đăng nhập</a>';
-                            echo '<a class="dropdown-item" href="http://localhost/Laptrinhweb/Register">Đăng ký</a>';
+                            echo '<a class="dropdown-item" href="http://localhost/Laptrinhweb/Login">Sign in</a>';
+                            echo '<a class="dropdown-item" href="http://localhost/Laptrinhweb/Register">Sign up</a>';
                         }
                         else{
-                            if($user["role_id"] == 2) echo '<a class="dropdown-item" href="http://localhost/Laptrinhweb/Admin">Quản lý trang web</a>';
-                            echo '<a class="dropdown-item" href="http://localhost/Laptrinhweb/Home/quanlytaikhoan">Quản lý tài khoản</a>';
-                            echo '<a class="dropdown-item" href="http://localhost/Laptrinhweb/Home/quanlydonhang/'.$user["id"].'">Quản lý đơn hàng</a>';
-                            echo '<a class="dropdown-item" href="http://localhost/Laptrinhweb/Login/UserLogout">Đăng xuất</a>';
+                            if($user["role_id"] == 2) echo '<a class="dropdown-item" href="http://localhost/Laptrinhweb/Admin">Website Management</a>';
+                            echo '<a class="dropdown-item" href="http://localhost/Laptrinhweb/Home/accountmanage">Account Management</a>';
+                            echo '<a class="dropdown-item" href="http://localhost/Laptrinhweb/Home/ordersmanage/'.$user["id"].'">Order Management</a>';
+                            echo '<a class="dropdown-item" href="http://localhost/Laptrinhweb/Login/UserLogout">Sign out</a>';
                         } 
                             
                     ?>

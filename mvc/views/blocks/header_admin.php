@@ -40,7 +40,7 @@
   <input class="form-control form-control-dark w-100" type="text" placeholder="Tìm kiếm" aria-label="Search">
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      <a class="nav-link" href="http://localhost/Laptrinhweb/Home">Thoát</a>
+      <a class="nav-link" href="http://localhost/Laptrinhweb/Home">Exit</a>
     </li>
   </ul>
 </nav>	
@@ -70,7 +70,7 @@
             }
             ?>" href="http://localhost/Laptrinhweb/CategoryAdmin">
               <i class="bi bi-folder"></i>
-              Danh Mục Sản Phẩm
+              Products list
             </a>
           </li>
           <li class="nav-item">
@@ -81,7 +81,7 @@
             }
             ?>" href="http://localhost/Laptrinhweb/ProductAdmin">
               <i class="bi bi-file-earmark-text"></i>
-              Sản Phẩm
+              Products
             </a>
           </li>
           <li class="nav-item">
@@ -92,7 +92,7 @@
             }
             ?>" href="http://localhost/Laptrinhweb/OrderAdmin">
               <i class="bi bi-minecart"></i>
-              Quản Lý Đơn Hàng
+              Orders management
             </a>
           </li>
           <li class="nav-item">
@@ -103,7 +103,7 @@
             }
             ?>" href="http://localhost/Laptrinhweb/FeedbackAdmin">
               <i class="bi bi-question-circle-fill"></i>
-              Quản Lý Phản Hồi
+              Feedback management
             </a>
           </li>
           <li class="nav-item">
@@ -114,7 +114,7 @@
             }
             ?>" href="http://localhost/Laptrinhweb/UserAdmin">
               <i class="bi bi-people-fill"></i>
-              Quản Lý Người Dùng
+              Users management
             </a>
           </li>
         </ul>
@@ -122,4 +122,3 @@
     </nav>
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-      <!-- hien thi tung chuc nang cua trang quan tri START-->

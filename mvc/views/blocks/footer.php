@@ -10,16 +10,13 @@
                 <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
 
                     <!-- Links -->
-                    <h5>Giới thiệu về chúng tôi</h5>
+                    <h5>About us </h5>
                     <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
 
-                    <p class="foot-desc mb-0">Đội ngũ phát triển gồm 5 thành viên</p>
-                    <p class="foot-desc mb-0">Nguyễn Tấn Lộc</p>
-                    <p class="foot-desc mb-0">Nguyễn Danh Tiến Dũng </p>
-                    <p class="foot-desc mb-0">Hà Minh Đức </p>
-                    <p class="foot-desc mb-0">Trần Lê Công Minh </p>
-                    <p class="foot-desc mb-0">Nguyễn Trọng Phúc </p>
-
+                    <p class="foot-desc mb-0">Developement team</p>
+                    <p class="foot-desc mb-0">Trần Tiến Phát</p>
+                    <p class="foot-desc mb-0">Nguyễn Bá Minh Hưng </p>
+                    <p class="foot-desc mb-0">Phạm Nhật Hoàng </p>
                 </div>
                 <!-- Grid column -->
 
@@ -29,7 +26,7 @@
                 <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
 
                     <!-- Links -->
-                    <h5>Sản phẩm nổi bật</h5>
+                    <h5>Trending products </h5>
                     <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
 
                     <ul class="list-unstyled foot-desc">
@@ -56,21 +53,21 @@
                 <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
 
                     <!-- Links -->
-                    <h5>Hỗ trợ</h5>
+                    <h5>Support</h5>
                     <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
 
                     <ul class="list-unstyled foot-desc">
                         <li class="mb-2">
-                            <a href="#!">Quản lý tài khoản</a>
+                            <a href="#!">Account management</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#!">Trợ giúp</a>
+                            <a href="#!">Support</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#!">Tin tức</a>
+                            <a href="#!">News</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#!">Liên hệ</a>
+                            <a href="#!">Contact</a>
                         </li>
                     </ul>
 
@@ -83,16 +80,16 @@
                 <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
 
                     <!-- Links -->
-                    <h5>Liên hệ</h5>
+                    <h5>Contact</h5>
                     <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
 
                     <ul class="fa-ul foot-desc ml-4">
-                        <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>Đại học Bách Khoa TPHCM   
+                        <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>HCM University of Technology   
                         </li>
-                        <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>034 765 1292</li>
-                        <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>loc.nguyencse@gmail.com
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>094 125 5292</li>
+                        <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>admin.cse@bk.com
                         </li>
-                        <li><span class="fa-li"><i class="far fa-clock"></i></span>Làm việc 24/7</li>
+                        <li><span class="fa-li"><i class="far fa-clock"></i></span>Working 24/7</li>
                     </ul>
 
                 </div>

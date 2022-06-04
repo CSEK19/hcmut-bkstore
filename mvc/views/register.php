@@ -23,11 +23,11 @@
 <body>
 
 <form id="form_register" action="http://localhost/Laptrinhweb/Register/UserRegister"  method="post">
-    <h4>ĐĂNG KÝ TÀI KHOẢN</h4>
+    <h4>SIGN UP</h4>
     <p class="d-none" id="checkEmail"><?=$data["checkEmail"]?></p>
   <div class="form-group">
-    <label for="exampleInputEmail1">Họ và tên</label>
-    <input type="text" class="form-control" id="fullname" name="fullname">
+    <label for="exampleInputEmail1">Fullname</label>
+    <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Fullname">
     <div id="mes_fullname"></div>
   </div>
 
@@ -42,24 +42,24 @@
   }
 ?>
   <div class="form-group">
-    <label for="exampleInputPassword1">Mật khẩu</label>
-    <input type="password" class="form-control" id="password" name="password">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
   </div>
 
   <div class="form-group">
-    <label for="exampleInputPassword1">Số điện thoại</label>
-    <input type="text" class="form-control" id="phone_number" name="phone_number">
+    <label for="exampleInputPassword1">Phone number</label>
+    <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Phone number">
   </div>
   
 
   <div class="form-group">
-    <label for="exampleInputPassword1">Địa chỉ</label>
-    <input type="text" class="form-control" id="address" name="address">
+    <label for="exampleInputPassword1">Address</label>
+    <input type="text" class="form-control" id="address" name="address" placeholder="Address">
   </div>
   <div>
-    <a id="link_login" href="http://localhost/Laptrinhweb/Login">Tôi đã có tài khoản</a>
+    <a id="link_login" href="http://localhost/Laptrinhweb/Login">Have an account ?</a>
     <button type="submit" onclick="checkRegister()" name="btnRegister" class="btn btn-primary">Register</button>
-    <a id="link_register" href="http://localhost/Laptrinhweb/Home">Trở về trang chủ</a>
+    <a id="link_register" href="http://localhost/Laptrinhweb/Home">Back to home</a>
   </div>
   
 </form>
@@ -78,9 +78,9 @@
         var address = document.getElementById("address").value;
 
         if(fullname == '' || email == '' || password == ''|| phone_number == ''|| address == ''  ) 
-          alert("Vui lòng nhập đủ thông tin!!!");
+          alert("Please fill all forms!!!");
         else if(password.length < 6)
-          alert("Vui lòng nhập mật khẩu có ít nhất 6 ký tự!!!");
+          alert("Password must have at least 6 characters!!!");
     }
 </script>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
