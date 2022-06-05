@@ -121,7 +121,7 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item"><b>Main Campus </b> - 268 Ly Thuong Kiet Street, District 10, HCMC</li>
             <li class="list-group-item"><b>Dorm</b> - 497 Hoa Hao, Ward 7, District 10, HCMC</li>
-            <li class="list-group-item"><b>Base 2</b> Vietnam National University, HCMC</li>
+            <li class="list-group-item"><b>Base 2</b> - Vietnam National University, HCMC</li>
         </ul>
     </div>
 
