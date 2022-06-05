@@ -237,7 +237,7 @@ class Home extends Controller{
         $orderItem = $orderSuccessModel->getorders($user_id);
 
         $this->view("home",[
-            "render"=>"quanlydonhang",
+            "render"=>"orders",
             "allCategory"=>$this->allCategory,
             "orderItem"=> $orderItem
         ]);

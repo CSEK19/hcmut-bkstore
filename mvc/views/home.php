@@ -3,6 +3,7 @@ require_once "mvc/views/blocks/header.php";
 
 if($data["render"] == "home") {
     require_once "mvc/views/components/sliderbar.php";
+    
     require_once "mvc/views/components/showProduct.php";
 }
 else if($data["render"] == "productDetail"){

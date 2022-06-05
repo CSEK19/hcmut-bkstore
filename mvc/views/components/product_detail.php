@@ -103,7 +103,11 @@
 <h3 style="color:red; margin-top:10px">Similar Products</h3>
 <div class="showproduct mt-3">
 <?php
+  $countProduct = count($data["allProductCategory"]);
     for($i=0;$i<4;$i++){
+      if ($i >= $countProduct){
+        break;
+      }
         echo    '<div class="card">';
         echo        '<a href="http://localhost/bkstore/Home/productDetail/'.$data["allProductCategory"][$i]["id"].'">
                         <img class="card-img-top mt-2"
@@ -120,7 +124,9 @@
         echo    '</div>';
     }
 ?>
- <p id="user_id"><?php if(isset($user["id"])) echo $user["id"]; else echo ''; ?></p>
+ <!-- <p id="user_id"><?php if(isset($user["id"])) echo $user["id"]; else echo ''; ?></p> -->
+  <p id="user_id"><?php if(isset($user["id"])) echo ''; else echo ''; ?></p>
+
 </div>
 </div>
 <script type="text/javascript">

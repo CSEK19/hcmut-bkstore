@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 05, 2022 lúc 08:13 AM
+-- Thời gian đã tạo: Th6 05, 2022 lúc 10:03 AM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 7.3.31
 
@@ -42,7 +42,8 @@ INSERT INTO `category` (`id`, `name`) VALUES
 (3, 'Samsung'),
 (102, 'Xiaomi'),
 (104, 'Oppo'),
-(105, 'Nokia');
+(105, 'Nokia'),
+(109, 'Apple');
 
 -- --------------------------------------------------------
 
@@ -68,7 +69,8 @@ INSERT INTO `feedback` (`id`, `note`, `user_id`, `product_id`, `created_at`, `up
 (53, 'Chủ đề Hello- Nội dung Tester', 55, 48, '2022-06-05 07:17:08', '2022-06-05 07:17:08', 0),
 (54, 'Good!', 55, 21, '2022-06-05 07:17:29', '2022-06-05 07:17:29', 0),
 (55, 'Chủ đề Test_2- Nội dung None', 55, 48, '2022-06-05 07:20:33', '2022-06-05 07:20:33', 0),
-(56, 'Chủ đề Tester- Nội dung Tester', 56, 48, '2022-06-05 07:21:07', '2022-06-05 07:21:07', 0);
+(56, 'Chủ đề Tester- Nội dung Tester', 56, 48, '2022-06-05 07:21:07', '2022-06-05 09:11:27', 0),
+(57, 'Chủ đề Alo- Nội dung Alo', 55, 48, '2022-06-05 09:46:55', '2022-06-05 09:47:25', 0);
 
 -- --------------------------------------------------------
 
@@ -105,7 +107,9 @@ INSERT INTO `orders` (`id`, `fullname`, `email`, `phone`, `user_id`, `status`, `
 (51, 'tester2', 'tester2@gmail.com', '1234', 56, 3, 0, '1234', '2022-09-09 07:10:22', 6090000),
 (52, 'tester2', '1@yahoo.com', '1234', 56, 3, 0, '1234', '2022-10-10 07:11:34', 28000000),
 (53, 'tester2', 'test@gmail.com', '1234', 56, 3, 0, '1234', '2022-11-11 07:11:51', 25990000),
-(54, 'tester', 'tester@gmail.com', '1234', 56, 3, 0, 'HCMUT', '2022-12-12 07:12:07', 115970000);
+(54, 'tester', 'tester@gmail.com', '1234', 56, 3, 0, 'HCMUT', '2022-12-12 07:12:07', 115970000),
+(55, 'test_ip', '1234@yahoo.com', '1234', 56, 3, 0, '1234', '2022-06-05 14:40:25', 33990000),
+(56, 'test_ip_2', 'tester2@gmail.com', '1234', 56, 3, 0, '1234', '2022-06-05 09:40:55', 33990000);
 
 -- --------------------------------------------------------
 
@@ -143,7 +147,9 @@ INSERT INTO `order_details` (`id`, `order_id`, `product_id`, `price`, `num`, `to
 (91, 54, 6, 23990000, 1, 23990000),
 (92, 54, 7, 25000000, 1, 25000000),
 (93, 54, 11, 40990000, 1, 40990000),
-(94, 54, 18, 25990000, 1, 25990000);
+(94, 54, 18, 25990000, 1, 25990000),
+(95, 55, 21, 33990000, 1, 33990000),
+(96, 56, 21, 33990000, 1, 33990000);
 
 -- --------------------------------------------------------
 
@@ -232,7 +238,8 @@ INSERT INTO `product` (`id`, `category_id`, `title`, `price`, `discount`, `thumb
 (49, 105, 'Nokia X10 5G', 5190000, 5490000, 'https://image.cellphones.com.vn/358x/media/catalog/product/n/o/nokia-x10.jpg', NULL, NULL, NULL, 0),
 (50, 105, 'Nokia G21', 3490000, 4290000, 'https://image.cellphones.com.vn/358x/media/catalog/product/t/h/thumb_602966_default_big.jpg', NULL, NULL, NULL, 0),
 (51, 105, 'Nokia C21 Plus 3GB 64GB\r\n', 2890000, 3190000, 'https://image.cellphones.com.vn/358x/media/catalog/product/n/o/nokia-c21-plus-600x600_2_1.jpg', NULL, NULL, NULL, 0),
-(52, 105, 'Nokia C30 2GB 32GB\r\n', 2390000, 2999000, 'https://image.cellphones.com.vn/358x/media/catalog/product/6/3/637649100605269420_nokia-c30-xanh-1_5_1_.jpg', NULL, NULL, NULL, 0);
+(52, 105, 'Nokia C30 2GB 32GB\r\n', 2390000, 2999000, 'https://image.cellphones.com.vn/358x/media/catalog/product/6/3/637649100605269420_nokia-c30-xanh-1_5_1_.jpg', NULL, NULL, NULL, 0),
+(53, 109, 'MacBook Pro 14 inch 2022', 95990000, 99990000, 'https://image.cellphones.com.vn/358x/media/catalog/product/m/a/macbook-pro-14-inch-2021-32gb-1tb-1_8.jpg', '', NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -271,7 +278,8 @@ CREATE TABLE `tokens` (
 
 INSERT INTO `tokens` (`user_id`, `token`, `created_at`) VALUES
 (55, '0e60521fee975cd08f2997f22ae6b6be', '2022-06-05 06:35:37'),
-(56, '1d1d7bc20388626c9d6d0d5973af8b9a', '2022-06-05 06:38:00');
+(56, '1d1d7bc20388626c9d6d0d5973af8b9a', '2022-06-05 06:38:00'),
+(56, 'fe5e548aae5b975896f0bfde84745d33', '2022-06-05 09:39:41');
 
 -- --------------------------------------------------------
 
@@ -296,7 +304,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `fullname`, `email`, `phone_number`, `address`, `password`, `role_id`, `deleted`) VALUES
 (55, 'Admin', 'admin@gmail.com', '1234', '1234', 'b4cbd48886a5331c5eb2fedadabe311c', 2, 0),
-(56, 'tester', 'tester@gmail.com', '1234', '1234', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0);
+(56, 'tester', 'tester@gmail.com', '1234', '1234', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0),
+(57, 'tester2', 'tester2@gmail.com', '123456', '123456', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0);
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -372,25 +381,25 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT cho bảng `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
 
 --
 -- AUTO_INCREMENT cho bảng `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT cho bảng `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT cho bảng `order_details`
 --
 ALTER TABLE `order_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
 
 --
 -- AUTO_INCREMENT cho bảng `payments`
@@ -402,7 +411,7 @@ ALTER TABLE `payments`
 -- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT cho bảng `role`
@@ -414,7 +423,7 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- Các ràng buộc cho các bảng đã đổ

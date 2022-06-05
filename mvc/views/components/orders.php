@@ -26,7 +26,7 @@
             echo 'Chờ duyệt';
         else if($data["orderItem"][$i]["status"] == 1) echo "Shipping";
         else if($data["orderItem"][$i]["status"] == 4) echo "Paid";
-        else echo "Successfully pay!";
+        else echo "Done";
         echo '</td>';
         if($data["orderItem"][$i]["status"] != 3)
           echo '<td><a href="http://localhost/bkstore/Home/confirmOrder/'.$data["orderItem"][$i]["id"].'/'.$user["id"].'"><button class="btn btn-danger">Has received the goods</button><a/></td>
