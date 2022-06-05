@@ -13,11 +13,11 @@
                     <h5>About us</h5>
                     <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
 
-                    <p class="foot-desc mb-0">Development team</p>
+                    <p class="foot-desc mb-0">Development Team</p>
+                    <p class="foot-desc mb-0">Phạm Nhật Hoàng </p>
                     <p class="foot-desc mb-0">Nguyễn Bá Minh Hưng</p>
                     <p class="foot-desc mb-0">Trần Tiến Phát </p>
-                    <p class="foot-desc mb-0">Phạm Nhật Hoàng </p>
-                    
+
 
                 </div>
                 <!-- Grid column -->
@@ -60,7 +60,7 @@
 
                     <ul class="list-unstyled foot-desc">
                         <li class="mb-2">
-                            <a href="#!">Account management</a>
+                            <a href="#!">Account Management</a>
                         </li>
                         <li class="mb-2">
                             <a href="#!">Help</a>
@@ -88,8 +88,8 @@
                     <ul class="fa-ul foot-desc ml-4">
                         <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>HCM University of Technology     
                         </li>
-                        <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>0848226326</li>
-                        <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>adimcse@gmail.com
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>0123456789</li>
+                        <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>bkstore@co3050.hcmut.edu.vn
                         </li>
                         <li><span class="fa-li"><i class="far fa-clock"></i></span>Working 24/7</li>
                     </ul>

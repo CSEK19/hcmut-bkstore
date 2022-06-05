@@ -5,7 +5,7 @@ var_dump($user);
 
 <div  class="row" style="margin: 70px auto 0;width:50%">
 	<div class="col-md-12 table-responsive">
-		<h3> Account management</h3>
+		<h3> Account Management</h3>
 		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h5 style="color: red;"></h5>

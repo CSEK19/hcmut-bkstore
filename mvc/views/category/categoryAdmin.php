@@ -10,7 +10,7 @@
 		<p class="d-none" id="deleteSuccess"><?=$data["deleteSuccess"]?></p>
 	</div>
 	<div class="col-md-6">
-		<form method="post" action="http://localhost/Laptrinhweb/CategoryAdmin/insertCategoryController">
+		<form method="post" action="http://localhost/bkstore/CategoryAdmin/insertCategoryController">
 			<div class="form-group">
 			  <label for="usr" style="font-weight: bold;">Product:</label>
 			  <input required="true" type="text" class="form-control" id="usr" name="name">

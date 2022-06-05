@@ -251,18 +251,18 @@ class Home extends Controller{
         ]);
     }
 
-    public function gioithieu(){
+    public function about(){
 
         $this->view("home",[
-            "render"=>"gioithieu",
+            "render"=>"about",
             "allCategory"=>$this->allCategory
         ]);
     }
 
-    public function tintuc(){
+    public function news(){
     
         $this->view("home",[
-            "render"=>"tintuc",
+            "render"=>"news",
             "allCategory"=>$this->allCategory
         ]);
     }
@@ -320,8 +320,8 @@ class Home extends Controller{
                 ';
             }
             if($output == '<i style="right: 10px;position: absolute;top: 4px;z-index:9999" class="fas fa-times"></i>')
-                $output .= '<li style="margin: 5px 0;" class="list-group">
-                            Không tìm thấy sản phẩm</li>';
+                $output .= '<li style="margin: 5px 0;   justify-content: center;" class="list-group">
+                            No products found</li>';
             echo $output;
         }
     }

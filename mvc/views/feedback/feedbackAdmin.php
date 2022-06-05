@@ -1,19 +1,19 @@
 <?php
-	$title = 'Quản Lý Phản Hồi';
+	$title = 'Feedback Management';
     $isActive = "FeedbackAdmin";
 	require_once('mvc/views/blocks/header_admin.php');
 ?>
 
 <div class="row" style="margin-top: 20px;">
 	<div class="col-md-12 table-responsive">
-		<h3>Feedback management</h3>
+		<h3>Feedback Management</h3>
 
 		<table class="table table-bordered table-hover" style="margin-top: 20px;">
 			<thead>
 				<tr>
 					<th>No</th>
 					<th>Name</th>
-					<th>Phone number</th>
+					<th>Phone Number</th>
 					<th>Email</th>
 					<th>Product</th>
 					<th>Details</th>

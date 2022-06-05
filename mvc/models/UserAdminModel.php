@@ -40,7 +40,7 @@ class UserAdminModel extends DB{
         return true;
     }
 
-    public function addUser($id, $fullname, $email, $role_id, $phone_number, $address, $password){
+    public function addUser($fullname, $email, $role_id, $phone_number, $address, $password){
         $sql = "select * from User where email = '$email' and id <> $id";
 		$userItem = $this->executeResult($sql, true);
         if($userItem != null){

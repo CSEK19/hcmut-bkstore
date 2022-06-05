@@ -17,11 +17,11 @@ else if($data["render"] == "card"){
 else if($data["render"] == "contact"){
     require_once "mvc/views/components/contact.php";
 }
-else if($data["render"] == "gioithieu"){
-    require_once "mvc/views/components/gioithieu.php";
+else if($data["render"] == "about"){
+    require_once "mvc/views/components/about.php";
 }
-else if($data["render"] == "tintuc"){
-    require_once "mvc/views/components/tintuc.php";
+else if($data["render"] == "news"){
+    require_once "mvc/views/components/news.php";
 }
 else if($data["render"] == "quanlytaikhoan"){
     require_once "mvc/views/components/updateInfoUser.php";

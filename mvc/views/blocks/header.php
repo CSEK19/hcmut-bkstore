@@ -27,7 +27,7 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>PhoneStore</title>
+        <title>BK Store</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
@@ -60,7 +60,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item <?php if($data["render"]!="tintuc" && $data["render"]!="gioithieu" && $data["render"]!="contact") echo "active"; ?>">
+                        <li class="nav-item <?php if($data["render"]!="news" && $data["render"]!="about" && $data["render"]!="contact") echo "active"; ?>">
                             <a class="nav-link" href="http://localhost/bkstore/Home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
@@ -80,10 +80,10 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if($data["render"]=="tintuc") echo "active"; ?>" href="http://localhost/bkstore/Home/tintuc">News</a>
+                            <a class="nav-link <?php if($data["render"]=="news") echo "active"; ?>" href="http://localhost/bkstore/Home/news">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if($data["render"]=="gioithieu") echo "active"; ?>" href="http://localhost/bkstore/Home/gioithieu">About</a>
+                            <a class="nav-link <?php if($data["render"]=="about") echo "active"; ?>" href="http://localhost/bkstore/Home/about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?php if($data["render"]=="contact") echo "active"; ?>" href="http://localhost/bkstore/Home/contact">Contact</a>
@@ -110,8 +110,8 @@
                             echo '<a class="dropdown-item" href="http://localhost/bkstore/Register">Sign up</a>';
                         }
                         else{
-                            if($user["role_id"] == 2) echo '<a class="dropdown-item" href="http://localhost/bkstore/Admin">Web management</a>';
-                            echo '<a class="dropdown-item" href="http://localhost/bkstore/Home/quanlytaikhoan">Account management</a>';
+                            if($user["role_id"] == 2) echo '<a class="dropdown-item" href="http://localhost/bkstore/Admin">Web Management</a>';
+                            echo '<a class="dropdown-item" href="http://localhost/bkstore/Home/quanlytaikhoan">Account Management</a>';
                             echo '<a class="dropdown-item" href="http://localhost/bkstore/Home/quanlydonhang/'.$user["id"].'">Orders</a>';
                             echo '<a class="dropdown-item" href="http://localhost/bkstore/Login/UserLogout">Sign out</a>';
                         } 
@@ -151,7 +151,7 @@
         //Hide the menus if visible
             $("#output_search").html("");
         });
-	});
+	});    
 </script>
            
    

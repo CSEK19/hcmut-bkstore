@@ -32,7 +32,7 @@
 					<td>'.number_format($data["allProduct"][$i]['price']).' VNĐ</td>
 					<td>'.$data["allProduct"][$i]['category_name'].'</td>
 					<td style="width: 50px">
-						<a href="http://localhost/bkstore/ProductAdmin/viewUpdateProduct/'.$data["allProduct"][$i]["id"].'"><button class="btn btn-warning">Fix</button></a>
+						<a href="http://localhost/bkstore/ProductAdmin/viewUpdateProduct/'.$data["allProduct"][$i]["id"].'"><button class="btn btn-warning">Modify</button></a>
 					</td>
 					<td style="width: 50px">
 					<a href="http://localhost/bkstore/ProductAdmin/deleteProduct/'.$data["allProduct"][$i]["id"].'"><button class="btn btn-danger">Delete</button></a>
