@@ -16,7 +16,8 @@
     <div id="mapid" style="margin-top:70px; width: 100%; height: 700px;"></div>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <script>
-        var mymap = L.map('mapid').setView([10.773369022465484, 106.66062197999558], 17);
+        var mymap = L.map('mapid').setView([10.773369022465484, 106.66062197999558], 12);
+
 
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
             maxZoom: 18,
@@ -28,10 +29,12 @@
             zoomOffset: -1
         }).addTo(mymap);
 
-        L.marker([10.773369022465484, 106.66062197999558]).addTo(mymap)
-            .bindPopup("<b>BK</b> My Store<br />Location.").openPopup();
+        L.marker([10.773369022465484, 106.66062197999558]).addTo(mymap).bindPopup("<b>BK</b> Main Campus<br />Location.").openPopup();
+        L.marker([10.760097, 106.662082]).addTo(mymap).bindPopup("<b>BK</b> Dorm<br />Location.");
+        L.marker([10.880473, 106.805795]).addTo(mymap).bindPopup("<b>BK</b> Base 2<br />Location.");
 
-        mymap.scrollWheelZoom.disable();
+
+        // mymap.scrollWheelZoom.disable();
         mymap.touchZoom.disable();
     </script>
     <!-- End Map -->
@@ -42,9 +45,9 @@
 
 <!--Google Maps-->
     <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Us</h2>
     <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions for us? Please do not hesitate to ask. We will reply you as soon as possible!!!</p>
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions for us? Please do not hesitate to ask. We will reply you as soon as possible!</p>
 
     <div class="row">
 
@@ -101,11 +104,11 @@
                 </li>
 
                 <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>034 765 1292</p>
+                    <p>0123 456 789</p>
                 </li>
 
                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>adimcse@gmail.com</p>
+                    <p>bkstore@co3050.hcmut.edu.vn</p>
                 </li>
             </ul>
         </div>
@@ -113,17 +116,26 @@
 
     </div>
 
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Official Locations</h3>
+    <div class ="text-center">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><b>Main Campus </b> - 268 Ly Thuong Kiet Street, District 10, HCMC</li>
+            <li class="list-group-item"><b>Dorm</b> - 497 Hoa Hao, Ward 7, District 10, HCMC</li>
+            <li class="list-group-item"><b>Base 2</b> Vietnam National University, HCMC</li>
+        </ul>
+    </div>
+
 </section>
 <!--Section: Contact v.2-->
 <script type="text/javascript">
     var alertSuccess = document.getElementById("alertSuccess").innerHTML;
     if(alertSuccess == 1) 
-        alert("Bạn đã gửi thành công!!!");
+        alert("Sent successfully!");
 
     function checkBtnContact() {
         var subject = document.getElementById("subject").value; 
         var message = document.getElementById("message").value;
         if(subject == '' || message == '') 
-          alert("Please fill all forms!!!");
+          alert("Please fill all forms!");
     }
 </script>

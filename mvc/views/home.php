@@ -23,7 +23,7 @@ else if($data["render"] == "about"){
 else if($data["render"] == "news"){
     require_once "mvc/views/components/news.php";
 }
-else if($data["render"] == "quanlytaikhoan"){
+else if($data["render"] == "account"){
     require_once "mvc/views/components/updateInfoUser.php";
 }
 else if($data["render"] == "checkout"){

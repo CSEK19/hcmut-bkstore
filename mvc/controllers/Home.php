@@ -201,10 +201,10 @@ class Home extends Controller{
         echo $id;
     }
 
-    public function quanlytaikhoan(){
+    public function account(){
         
         $this->view("home",[
-            "render"=>"quanlytaikhoan",
+            "render"=>"account",
             "allCategory"=>$this->allCategory
         ]);
     }

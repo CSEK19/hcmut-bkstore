@@ -60,16 +60,16 @@
 
                     <ul class="list-unstyled foot-desc">
                         <li class="mb-2">
-                            <a href="#!">Account Management</a>
+                            <a href="http://localhost/bkstore/Home/account">Account Management</a>
                         </li>
                         <li class="mb-2">
                             <a href="#!">Help</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#!">News</a>
+                            <a href="http://localhost/bkstore/Home/news">News</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#!">Contact</a>
+                            <a href="http://localhost/bkstore/Home/contact">Contact</a>
                         </li>
                     </ul>
 
@@ -88,7 +88,7 @@
                     <ul class="fa-ul foot-desc ml-4">
                         <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>HCM University of Technology     
                         </li>
-                        <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>0123456789</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>0123 456 789</li>
                         <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>bkstore@co3050.hcmut.edu.vn
                         </li>
                         <li><span class="fa-li"><i class="far fa-clock"></i></span>Working 24/7</li>

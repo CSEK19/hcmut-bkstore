@@ -1,7 +1,7 @@
 <?php
     require_once "mvc/utility/utility.php";
     if(isset($data["render"])){
-        if($data["render"]=="quanlytaikhoan")
+        if($data["render"]=="account")
             $user = getUserToken(1);
         else $user = getUserToken();
     }
@@ -111,7 +111,7 @@
                         }
                         else{
                             if($user["role_id"] == 2) echo '<a class="dropdown-item" href="http://localhost/bkstore/Admin">Web Management</a>';
-                            echo '<a class="dropdown-item" href="http://localhost/bkstore/Home/quanlytaikhoan">Account Management</a>';
+                            echo '<a class="dropdown-item" href="http://localhost/bkstore/Home/account">Account Management</a>';
                             echo '<a class="dropdown-item" href="http://localhost/bkstore/Home/quanlydonhang/'.$user["id"].'">Orders</a>';
                             echo '<a class="dropdown-item" href="http://localhost/bkstore/Login/UserLogout">Sign out</a>';
                         } 
