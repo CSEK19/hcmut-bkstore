@@ -51,20 +51,20 @@
     </style>
     <body>
             <!-- Begin Header -->
-            <nav style = "background-color: rgb(0, 145, 255)" class=" navbar fixed-top navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="http://localhost/bkstore/Home"><img src="http://localhost/bkstore/public/BKStore__1_-removebg-preview.png" alt="Bkstore"></a>
+            <nav style = "background-color: #1B9CE5" class=" navbar fixed-top navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="http://localhost/bkstore/Home"><img src="http://localhost/bkstore/public/logo.svg" alt="Bkstore"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto nav-pills">
                         <li class="nav-item <?php if($data["render"]!="news" && $data["render"]!="about" && $data["render"]!="contact") echo "active"; ?>">
-                            <a class="nav-link" href="http://localhost/bkstore/Home">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link text-light <?php if($data["render"]=="home") echo "active"; ?>" href="http://localhost/bkstore/Home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="http://localhost/bkstore/Home/productList" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle text-light" href="http://localhost/bkstore/Home/productList" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Products
                             </a>
@@ -80,18 +80,18 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if($data["render"]=="news") echo "active"; ?>" href="http://localhost/bkstore/Home/news">News</a>
+                            <a class="nav-link text-light <?php if($data["render"]=="news") echo "active"; ?>" href="http://localhost/bkstore/Home/news">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if($data["render"]=="about") echo "active"; ?>" href="http://localhost/bkstore/Home/about">About</a>
+                            <a class="nav-link text-light <?php if($data["render"]=="about") echo "active"; ?>" href="http://localhost/bkstore/Home/about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if($data["render"]=="contact") echo "active"; ?>" href="http://localhost/bkstore/Home/contact">Contact</a>
+                            <a class="nav-link text-light <?php if($data["render"]=="contact") echo "active"; ?>" href="http://localhost/bkstore/Home/contact">Contact</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0" method="POST" action="http://localhost/bkstore/Home/search_buttuon">
                         <input class="form-control mr-sm-2" type="search" id="search_name" name="search_name" placeholder="Search..." aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0 bg-success text-light" type="submit">Search</button>
+                        <button class="btn btn-outline-white my-2 my-sm-0 bg-light" style="font-weight: 600; color: #1B9CE5" type="submit">Search</button>
                     </form>
                 </div>
                 <div style="margin-right: 20px;" class="nav-item dropdown">
@@ -100,7 +100,7 @@
                     <?php
                         if(isset($fullname))
                             echo $fullname;
-                        else echo '<i style="font-size: 27px;color:black" class="far fa-user"></i>';
+                        else echo '<i style="font-size: 27px;color:white" class="far fa-user"></i>';
                     ?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -152,6 +152,11 @@
             $("#output_search").html("");
         });
 	});    
+</script>
+<script> 
+function myFunction() {
+    document.getElementById("home").style.backgroundColor = "lightblue";
+}
 </script>
            
    
