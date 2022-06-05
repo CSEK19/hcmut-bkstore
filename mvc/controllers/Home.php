@@ -209,12 +209,12 @@ class Home extends Controller{
         ]);
     }
 
-    public function quanlydonhang($user_id){
+    public function orders($user_id){
         $orderSuccessModel = $this->model("OrderModel");
         $orderItem = $orderSuccessModel->getorders($user_id);
 
         $this->view("home",[
-            "render"=>"quanlydonhang",
+            "render"=>"orders",
             "allCategory"=>$this->allCategory,
             "orderItem"=> $orderItem
         ]);

@@ -112,7 +112,7 @@
                         else{
                             if($user["role_id"] == 2) echo '<a class="dropdown-item" href="http://localhost/bkstore/Admin">Web Management</a>';
                             echo '<a class="dropdown-item" href="http://localhost/bkstore/Home/account">Account Management</a>';
-                            echo '<a class="dropdown-item" href="http://localhost/bkstore/Home/quanlydonhang/'.$user["id"].'">Orders</a>';
+                            echo '<a class="dropdown-item" href="http://localhost/bkstore/Home/orders/'.$user["id"].'">Orders</a>';
                             echo '<a class="dropdown-item" href="http://localhost/bkstore/Login/UserLogout">Sign out</a>';
                         } 
                             

@@ -32,8 +32,8 @@ else if($data["render"] == "checkout"){
 else if($data["render"] == "succesOrder"){
     require_once "mvc/views/components/succesOrder.php";
 }
-else if($data["render"] == "quanlydonhang"){
-    require_once "mvc/views/components/quanlydonhang.php";
+else if($data["render"] == "orders"){
+    require_once "mvc/views/components/orders.php";
 }
 else if($data["render"] == "orderDetail"){
     require_once "mvc/views/components/detailOrder.php";
