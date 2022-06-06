@@ -31,7 +31,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="http://localhost/bkstore/public/images/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="http://localhost/bkstore/public/logo.svg">
         <!-- Main Style CSS -->
         <link rel="stylesheet" href="http://localhost/bkstore/public/css/style.css">
         <!-- Modernizr js -->
@@ -52,7 +52,7 @@
     <body>
             <!-- Begin Header -->
             <nav style = "background-color: #1B9CE5" class=" navbar fixed-top navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="http://localhost/bkstore/Home"><img src="http://localhost/bkstore/public/logo.svg" alt="Bkstore"></a>
+                <a class="navbar-brand" href="http://localhost/bkstore/Home"><img src="http://localhost/bkstore/public/logo.svg" alt="BK Store"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
