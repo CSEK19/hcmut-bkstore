@@ -13,7 +13,7 @@
         style="margin-bottom: 5px; margin-right: 5px;
         <?php
             if($data["category_id"] == 0)
-                echo "background-color:#1B9CE5";
+                echo "background-color:rgba(243, 45, 45, 0.875)";
         ?>
         " 
         type="button" 
@@ -23,7 +23,7 @@
     <?php
         $countCategory = count($data["allCategory"]);
             for($i=0;$i<$countCategory;$i++){
-                echo   '<button style="margin-bottom: 5px; margin-right: 5px;';if($data["category_id"] == $data["allCategory"][$i]["id"]) echo "background-color:#1B9CE5 "; echo '" type="button" class="btn btn-primary">
+                echo   '<button style="margin-bottom: 5px; margin-right: 5px;';if($data["category_id"] == $data["allCategory"][$i]["id"]) echo "background-color:rgba(243, 45, 45, 0.875) "; echo '" type="button" class="btn btn-primary">
                     <a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/productList/'.$data["allCategory"][$i]["id"].'">'.$data["allCategory"][$i]["name"].'</a></button>';
             }
                 
@@ -34,28 +34,28 @@
         <button style="margin-bottom: 5px; margin-right: 5px;
             <?php
                 if($data["fillter"] == 1)
-                    echo "background-color:#1B9CE5";
+                    echo "background-color:rgba(243, 45, 45, 0.875)";
             ?>
         " type="button" class="btn btn-primary">
             <a style="color:white;text-decoration:none  " href="http://localhost/bkstore/Home/productList/<?=$data["category_id"]?>/1/1">Price (High &gt; Low)</a></button>
         <button style="margin-bottom: 5px; margin-right: 5px;
             <?php
                 if($data["fillter"] == 2)
-                    echo "background-color:#1B9CE5";
+                    echo "background-color:rgba(243, 45, 45, 0.875)";
             ?>
         " type="button" class="btn btn-primary">
             <a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/productList/<?=$data["category_id"]?>/1/2">Price (Low &gt; High)</a></button>
         <button style="margin-bottom: 5px; margin-right: 5px;
             <?php
                 if($data["fillter"] == 3)
-                    echo "background-color:#1B9CE5";
+                    echo "background-color:rgba(243, 45, 45, 0.875)";
             ?>
         " type="button" class="btn btn-primary">
             <a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/productList/<?=$data["category_id"]?>/1/3">Name (A &gt; Z)</a></button>
         <button style="margin-bottom: 5px; margin-right: 5px;
             <?php
                 if($data["fillter"] == 4)
-                    echo "background-color:#1B9CE5";
+                    echo "background-color:rgba(243, 45, 45, 0.875)";
             ?>
         " type="button" class="btn btn-primary">
             <a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/productList/<?=$data["category_id"]?>/1/4">Name (Z &gt; A)</a></button>
