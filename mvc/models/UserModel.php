@@ -27,7 +27,7 @@ class UserModel extends DB{
         } 
     }
 
-    public function XacNhanTaiKhoan($email, $password){
+    public function accountIdentify($email, $password){
         $result = false;
         $qr = "SELECT * FROM user WHERE email='$email' AND password='$password' AND deleted=0  ";
         $userExist = $this->executeResult($qr, true);
