@@ -3,7 +3,7 @@
 	$isActive = "CategoryAdmin";
 	require_once('mvc/views/blocks/header_admin.php');
 ?>
-
+<?php require_once "mvc/views/blocks/onTop.php" ?>
 <div class="row" style="margin-top: 20px;">
 	<div class="col-md-12" style="margin-bottom: 20px;">
 		<h3>Product Management</h3>

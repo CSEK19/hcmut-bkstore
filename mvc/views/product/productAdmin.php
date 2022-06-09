@@ -3,6 +3,7 @@
     $isActive = "ProductAdmin";
 	require_once('mvc/views/blocks/header_admin.php');
 ?>
+
 <div class="row" style="margin-top: 20px;">
 	<div class="col-md-12 table-responsive">
 		<h3>Product Management</h3>
@@ -44,6 +45,7 @@
 		</table>
 	</div>
 </div>
+
 <?php
 	require_once('mvc/views/blocks/footer_admin.php');
 ?>

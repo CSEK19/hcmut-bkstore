@@ -1,3 +1,4 @@
+<?php require_once "mvc/views/blocks/onTop.php" ?>
 <!-- Begin Slider -->
 <div id="wrapper">
     <div class="slider">
@@ -39,5 +40,6 @@
         <img src="https://cdn.cellphones.com.vn/media/wysiwyg/mb-ip-13-1200-75-max.png" alt="under-slider">
     </div>
 </div>
+
 <!-- End Under-Slider -->
 <!-- Begin List Product -->

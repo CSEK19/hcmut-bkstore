@@ -40,7 +40,7 @@
   <input class="form-control form-control-light w-100" type="text" placeholder="Search" aria-label="Search">
   <ul class="navbar-nav px-3 bg-danger">
     <li class="nav-item text-nowrap">
-      <a class="nav-link text-white" href="http://localhost/bkstore/Home">Sign out</a>
+      <a class="nav-link text-white" href="http://localhost/bkstore/Home">Exit</a>
     </li>
   </ul>
 </nav>	

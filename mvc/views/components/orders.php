@@ -1,3 +1,4 @@
+<?php require_once "mvc/views/blocks/onTop.php" ?>
 <h4 style="margin:70px 0 10px 50px ">Order Management</h4>
 <table class="table table-striped">
   <thead>
@@ -23,7 +24,7 @@
         <td>'.number_format($data["orderItem"][$i]["total_money"]).' đ</td>
         <td>';
         if($data["orderItem"][$i]["status"] == 0)
-            echo 'Chờ duyệt';
+            echo 'Pending';
         else if($data["orderItem"][$i]["status"] == 1) echo "Shipping";
         else if($data["orderItem"][$i]["status"] == 4) echo "Paid";
         else echo "Done";

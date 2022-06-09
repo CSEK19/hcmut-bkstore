@@ -5,6 +5,7 @@
   </ol>
 </nav>
 <!-- End Breadcrumb -->
+<?php require_once "mvc/views/blocks/onTop.php" ?>
 <!--Section: Block Content-->
 <div id="wrapper">
 

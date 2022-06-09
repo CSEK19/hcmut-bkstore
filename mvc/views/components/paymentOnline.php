@@ -1,3 +1,4 @@
+<?php require_once "mvc/views/blocks/onTop.php" ?>
 <div style="margin-top:70px" class="container">
             <h3>Order details</h3>
             <div class="table-responsive">

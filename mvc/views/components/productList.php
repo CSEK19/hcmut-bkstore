@@ -6,7 +6,7 @@
         </ol>
     </nav>
     <!-- End Breadcrumb -->
-
+    <?php require_once "mvc/views/blocks/onTop.php" ?>
     <div id="wrapper">
     <p style="font-weight:600">Products</p>
     <button 

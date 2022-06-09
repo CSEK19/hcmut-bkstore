@@ -1,4 +1,4 @@
-
+<?php require_once "mvc/views/blocks/onTop.php" ?>
 <!--Begin display -->
 <div class="container">
     <div class="header clearfix">

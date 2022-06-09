@@ -2,7 +2,7 @@
 $user = getUserToken(1);
 var_dump($user);
 ?>
-
+<?php require_once "mvc/views/blocks/onTop.php" ?>
 <div  class="row" style="margin: 70px auto 0;width:50%">
 	<div class="col-md-12 table-responsive">
 		<h3> Account Management</h3>

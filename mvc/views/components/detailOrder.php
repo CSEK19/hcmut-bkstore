@@ -1,3 +1,4 @@
+<?php require_once "mvc/views/blocks/onTop.php" ?>
 <h4 style="margin:70px 0 10px 50px ">Order details</h4>
 <table class="table table-striped">
   <thead>

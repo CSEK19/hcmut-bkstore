@@ -3,6 +3,7 @@
     <a style="color:black;text-decoration:none" href="http://localhost/bkstore/Home/productList/1"><h3 style="margin-left:20px; margin-top: 15px">Vsmart</h3></a>
     <hr/>
     <div class="showproduct">
+    <?php require_once "mvc/views/blocks/onTop.php" ?>
     <?php
         for($i=0;$i<4;$i++){
             echo    '<div class="card">';
