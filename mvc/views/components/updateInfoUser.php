@@ -14,21 +14,21 @@ var_dump($user);
 				<form method="post" action="http://localhost/bkstore/UserAdmin/updateUser/">
 					<div class="form-group">
 					  <label for="usr">Full name:</label>
-					  <input required="true" type="text" class="form-control" id="usr" name="fullname" value="<?=$user["fullname"]?>">
+					  <input required="true" type="text" class="form-control" id="usr" name="fullname" value="<?=($user != null) ? $user["fullname"] : ""?>">
 					  <input type="text" name="id" value="<?=$user["id"]?>" hidden="true">
 					  <input type="text" name="updateInfoUser" value="1" hidden="true">
 					</div>
 					<div class="form-group">
 					  <label for="email">Email:</label>
-					  <input required="true" type="email" class="form-control" id="email" name="email" value="<?=$user["email"]?>">
+					  <input required="true" type="email" class="form-control" id="email" name="email" value="<?=($user != null) ? $user["email"] : ""?>">
 					</div>
 					<div class="form-group">
 					  <label for="phone_number">Phone number:</label>
-					  <input required="true" type="tel" class="form-control" id="phone_number" name="phone_number" value="<?=$user["phone_number"]?>">
+					  <input required="true" type="tel" class="form-control" id="phone_number" name="phone_number" value="<?=($user != null) ?$user["phone_number"]: ""?>">
 					</div>
 					<div class="form-group">
 					  <label for="address">Address:</label>
-					  <input required="true" type="text" class="form-control" id="address" name="address" value="<?=$user["address"]?>">
+					  <input required="true" type="text" class="form-control" id="address" name="address" value="<?=($user != null) ?$user["address"]: ""?>">
 					</div>
 					<div class="form-group">
 					  <label for="pwd">Password:</label>
