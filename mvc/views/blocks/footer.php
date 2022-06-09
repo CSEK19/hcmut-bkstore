@@ -14,9 +14,9 @@
                     <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
 
                     <p class="foot-desc mb-0">Development Team</p>
-                    <p class="foot-desc mb-0">Phạm Nhật Hoàng </p>
-                    <p class="foot-desc mb-0">Nguyễn Bá Minh Hưng</p>
-                    <p class="foot-desc mb-0">Trần Tiến Phát </p>
+                    <p class="foot-desc mb-0">Pham Nhat Hoang </p>
+                    <p class="foot-desc mb-0">Nguyen Ba Minh Hung</p>
+                    <p class="foot-desc mb-0">Tran Tien Phat </p>
 
 
                 </div>

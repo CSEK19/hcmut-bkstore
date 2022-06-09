@@ -153,7 +153,7 @@
                 &nbsp;
             </p>
             <footer class="footer">
-                <p>&copy; English 2022</p>
+                <p>&copy; © HCMUT 2022</p>
             </footer>
         </div>  
     </body>
