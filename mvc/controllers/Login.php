@@ -22,7 +22,7 @@ class Login extends Controller{
             $password = getSecurityMD5($password);
            
             
-            $kq = $this->UserModel->XacNhanTaiKhoan($email, $password);
+            $kq = $this->UserModel->accountIdentify($email, $password);
      
             // show home
            
