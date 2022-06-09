@@ -9,7 +9,7 @@
                         src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/SS_Week.png" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/s22.png"
+                    <img class="d-block w-100" src="https://cdn2.cellphones.com.vn/690x300/https://dashboard.cellphones.com.vn/storage/imac.png"
                         alt="Second slide">
                 </div>
                 <div class="carousel-item">
