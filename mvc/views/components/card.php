@@ -113,11 +113,16 @@
           </ul>
           <?php
             if(isset($user)){
+              if ($data["countOrder"] > 0) {
               echo '<a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/checkout/'.$total.'"><button type="button" class="btn btn-primary btn-block">Pay by cash</button></a>';
               echo '<br/>';
-              echo '<a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/paymentOnline/'.$total.'"><button type="button" class="btn btn-primary btn-block">Online transfer</button></a>';
+              echo '<a style="color:white;text-decoration:none" href="http://localhost/bkstore/Home/paymentOnline/'.$total.'"><button type="button" class="btn btn-primary btn-block">Online transfer</button></a>';}
+              else {
+                echo '<a style="color:red" href="http://localhost/bkstore/Home">Please select products to make payment.</a>';
+              }
             }
-            else echo '<a style="color:red" href="http://localhost/bkstore/Login">Sign in to make payment</a>'; 
+            
+            else echo '<a style="color:red" href="http://localhost/bkstore/Login">Sign in to make payment.</a>'; 
           ?>
           
 
