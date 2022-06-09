@@ -22,12 +22,12 @@ class Login extends Controller{
             $password = getSecurityMD5($password);
            
             
-            $kq = $this->UserModel->accountIdentify($email, $password);
+            $res = $this->UserModel->accountIdentify($email, $password);
      
             // show home
            
-            if($kq["result"]) {
-                if($kq["role_id"] == 1) {
+            if($res["result"]) {
+                if($res["role_id"] == 1) {
                     header('Location: http://localhost/bkstore/Home');
 
                 }
