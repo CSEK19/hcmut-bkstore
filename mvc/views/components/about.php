@@ -31,7 +31,7 @@
             <div class="col-lg-5 col-md-10">
                 <div class="about-image-wrap">
                     <img class="img-full"
-                        src="https://cdn3.iconfinder.com/data/icons/digital-marketing-filled/64/Digital_Marketing-21-512.png"
+                        src="https://static.vecteezy.com/system/resources/previews/006/414/169/original/illustration-graphics-flat-design-of-hands-holding-smartphone-with-online-shop-on-screen-perfect-for-mobile-application-concept-free-vector.jpg" width="512" height="512" 
                         alt="About Us" />
                 </div>
             </div>

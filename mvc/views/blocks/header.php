@@ -28,7 +28,9 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>BK Store</title>
-        <meta name="description" content="">
+        <meta name="description" content="BK Store">
+        <meta name="keywords" content="smartphone, online retail, online sale, best price smartphone">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="http://localhost/bkstore/public/logo.svg">
