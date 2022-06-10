@@ -29,7 +29,8 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>BK Store</title>
         <meta name="description" content="BK Store">
-        <meta name="keywords" content="smartphone, online retail, online sale, best price smartphone">
+        <meta name="keywords" content="smartphone, online retail, online sale, best price smartphone,
+        Apple, iPhone, Samsung, Xiaomi, Oppo, Nokia, Apple">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
